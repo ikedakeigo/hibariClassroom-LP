@@ -1,0 +1,203 @@
+.inner {
+  padding: 210px 0 0 0;
+  max-width: 1250px;
+  margin: 0 auto 160px auto;
+}
+@media (max-width: 1200px) {
+  .inner {
+    max-width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .inner {
+    margin: 0 auto 80px auto;
+    padding: 170px 0 0 0;
+  }
+}
+.inner .headline {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  .inner .headline {
+    margin-bottom: 40px;
+  }
+}
+.inner .headline img {
+  height: 90px;
+  width: auto;
+}
+@media (max-width: 600px) {
+  .inner .headline img {
+    height: 60px;
+  }
+}
+.inner .headline span {
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.inner .headline span:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background-image: url(/wp-content/uploads/2023/03/hibari-midashi-image@2x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+.inner .tab-list {
+  margin-bottom: 60px;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .inner .tab-list {
+    margin-bottom: 30px;
+  }
+}
+.inner .tab-list #all {
+  display: none;
+}
+.inner .tab-list .info_tab {
+  cursor: pointer;
+  padding: 5px 0px;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+  width: 100px;
+  text-align: center;
+}
+.inner .tab-list .info_tab#news {
+  background-color: #643700;
+  margin-right: 30px;
+}
+.inner .tab-list .info_tab#blog {
+  background-color: #596E80;
+}
+.inner .blog-list {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.inner .blog-list .box {
+  padding: 20px 90px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #643700;
+}
+@media (max-width: 600px) {
+  .inner .blog-list .box {
+    padding: 30px 3%;
+  }
+}
+.inner .blog-list .box:first-child {
+  border-top: 1px solid #643700;
+}
+.inner .blog-list .box a {
+  align-items: center;
+}
+.inner .blog-list .box a .image {
+  width: 30%;
+}
+@media (max-width: 600px) {
+  .inner .blog-list .box a .image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.inner .blog-list .box a .image img {
+  height: 180px;
+  object-fit: cover;
+}
+@media (max-width: 600px) {
+  .inner .blog-list .box a .image img {
+    height: 250px;
+  }
+}
+.inner .blog-list .box a .contents {
+  width: calc(70% - 70px);
+  margin-left: 70px;
+}
+@media (max-width: 600px) {
+  .inner .blog-list .box a .contents {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+.inner .blog-list .box a .contents .info {
+  align-items: center;
+}
+.inner .blog-list .box a .contents .info .category {
+  padding: 5px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .inner .blog-list .box a .contents .info .category {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+.inner .blog-list .box a .contents .info .category.cat_news {
+  background-color: #643700;
+}
+.inner .blog-list .box a .contents .info .category.cat_blog {
+  background-color: #596E80;
+}
+.inner .blog-list .box a .contents .info .date {
+  color: #643700;
+}
+.inner .blog-list .box a .contents .title {
+  height: auto;
+  width: auto;
+  margin: 0;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  .inner .blog-list .box a .contents .title {
+    margin-top: 10px;
+  }
+}
+.inner .blog-list ul.page-numbers {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.inner .blog-list ul.page-numbers li {
+  margin-right: 15px;
+}
+.inner .blog-list ul.page-numbers li:last-child {
+  margin-right: 0;
+}
+.inner .blog-list ul.page-numbers li span {
+  background-color: #643700;
+  width: 35px;
+  height: 35px;
+  display: block;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+}
+.inner .blog-list ul.page-numbers li a {
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  display: block;
+  line-height: 35px;
+  text-align: center;
+  color: #643700;
+  border-radius: 50%;
+}
+.inner .blog-list ul.page-numbers li a.next, .inner .blog-list ul.page-numbers li a.prev {
+  height: 8px;
+  background-color: transparent;
+}
+.inner .blog-list ul.page-numbers li a.prev .arrow img {
+  transform: scale(-1, 1);
+}/*# sourceMappingURL=blog.css.map */

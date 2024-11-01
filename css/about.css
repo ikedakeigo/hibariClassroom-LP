@@ -1,0 +1,283 @@
+@charset "UTF-8";
+.ot-wrap {
+  padding: 210px 0 0px 0;
+}
+@media (max-width: 600px) {
+  .ot-wrap {
+    padding: 170px 0 0 0;
+  }
+}
+.ot-wrap .ot-inner {
+  max-width: 1250px;
+  margin: 0 0 0 auto;
+  padding-bottom: 100px;
+}
+@media (max-width: 1400px) {
+  .ot-wrap .ot-inner {
+    max-width: 95%;
+  }
+}
+@media (max-width: 600px) {
+  .ot-wrap .ot-inner {
+    max-width: 100%;
+    padding-bottom: 0px;
+  }
+}
+.ot-wrap .ot-inner .ot-title {
+  margin: 0 0 50px 0;
+}
+.ot-wrap .ot-inner .ot-title img {
+  height: 70px;
+  width: auto;
+}
+@media (max-width: 1400px) {
+  .ot-wrap .ot-inner .ot-title img {
+    height: 60px;
+  }
+}
+.ot-wrap .ot-inner .ot-content:first-child {
+  width: calc(50% - 70px);
+  margin-right: 70px;
+}
+@media (max-width: 600px) {
+  .ot-wrap .ot-inner .ot-content:first-child {
+    width: 90%;
+    margin: 0 auto 40px auto;
+  }
+}
+.ot-wrap .ot-inner .ot-content:last-child {
+  width: 50%;
+  position: relative;
+  top: 120px;
+}
+@media (max-width: 600px) {
+  .ot-wrap .ot-inner .ot-content:last-child {
+    display: none;
+  }
+}
+.ot-wrap .ot-inner .ot-content .ot-subtitle {
+  margin-bottom: 40px;
+}
+.ot-wrap .ot-inner .ot-content .ot-subtitle img {
+  height: 90px;
+  width: auto;
+}
+@media (max-width: 1400px) {
+  .ot-wrap .ot-inner .ot-content .ot-subtitle img {
+    height: 60px;
+  }
+}
+.ot-wrap .ot-inner .ot-content .name {
+  margin-top: 30px;
+}
+
+.ot-content-sp {
+  display: none;
+}
+@media (max-width: 600px) {
+  .ot-content-sp {
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
+.ot-bottom-wrap {
+  background-image: url(/wp-content/uploads/2023/03/クラフト紙-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+@media (max-width: 600px) {
+  .ot-bottom-wrap {
+    padding: 50px 0 50px 0;
+  }
+}
+.ot-bottom-wrap .ot-bottom-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .ot-bottom-wrap .ot-bottom-inner {
+    max-width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .ot-bottom-wrap .ot-bottom-inner {
+    max-width: 100%;
+  }
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content {
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content {
+    margin-top: 40px;
+  }
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content .image {
+  width: calc(55% - 70px);
+  margin-right: 70px;
+}
+@media (max-width: 600px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content .image {
+    width: 50%;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content .text {
+  width: 45%;
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content .text img {
+  height: 100px;
+  width: auto;
+  margin-bottom: 40px;
+}
+@media (max-width: 1400px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content .text img {
+    height: 70px;
+  }
+}
+@media (max-width: 600px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content .text {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:first-child {
+    flex-wrap: wrap-reverse;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:nth-child(2) {
+  margin: 0px auto 0 auto;
+  width: 90%;
+}
+@media (max-width: 1200px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:nth-child(2) {
+    margin: 40px auto 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:nth-child(2) {
+    width: 100%;
+    margin: -40px auto 0 auto;
+  }
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:nth-child(3) {
+  align-items: flex-end;
+}
+@media (max-width: 600px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:nth-child(3) {
+    margin: 50px auto 0 auto;
+    width: 90%;
+  }
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:nth-child(3) .image {
+  margin-right: 0px;
+  margin-left: 70px;
+}
+@media (max-width: 600px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:nth-child(3) .image {
+    margin-left: 0;
+  }
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:nth-child(3) .text img {
+  height: 35px;
+}
+@media (max-width: 1400px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:nth-child(3) .text img {
+    height: 25px;
+  }
+}
+@media (max-width: 1200px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:nth-child(3) {
+    margin-top: 40px;
+  }
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:last-child .text {
+  width: 70%;
+  margin-right: 0;
+  margin-top: 100px;
+  background-color: #643700;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:last-child .text img {
+  height: 25px;
+}
+@media (max-width: 1400px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:last-child .text img {
+    height: 20px;
+  }
+}
+@media (max-width: 1400px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:last-child .text img {
+    height: 18px;
+  }
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:last-child .text ul li {
+  color: #fff;
+}
+@media (max-width: 600px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:last-child .text {
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 0px;
+    box-sizing: border-box;
+    padding: 40px 5%;
+  }
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:last-child .absolute {
+  top: -50px;
+  right: 30px;
+}
+@media (max-width: 600px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:last-child .absolute {
+    top: -240px;
+  }
+}
+.ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:last-child .absolute img {
+  height: 200px;
+  width: auto;
+}
+@media (max-width: 600px) {
+  .ot-bottom-wrap .ot-bottom-inner .ot-bottom-content:last-child .absolute img {
+    height: 180px;
+  }
+}
+
+.ot-bottom-content-imagewrap {
+  max-width: 1000px;
+  margin: -160px auto 0 auto;
+}
+.ot-bottom-content-imagewrap .ot-bottom-content-image {
+  width: 70%;
+  position: relative;
+  z-index: 2;
+  margin: 0 0 0 auto;
+}
+
+@media (max-width: 600px) {
+  .ot-bottom-content-imagewrap-pc {
+    display: none;
+  }
+}
+
+.ot-bottom-content-imagewrap-sp {
+  margin: -20px auto 0 auto;
+  display: none;
+}
+@media (max-width: 600px) {
+  .ot-bottom-content-imagewrap-sp {
+    display: block;
+  }
+}
+.ot-bottom-content-imagewrap-sp .ot-bottom-content-image {
+  width: 90%;
+  margin: 0 auto;
+}/*# sourceMappingURL=about.css.map */

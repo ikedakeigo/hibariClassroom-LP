@@ -1,0 +1,502 @@
+@charset "UTF-8";
+.le-wrap {
+  padding: 210px 0 0 0;
+}
+@media (max-width: 600px) {
+  .le-wrap {
+    padding: 170px 0 0 0;
+  }
+}
+.le-wrap .le-inner .le-title {
+  max-width: 1250px;
+  margin: 0 auto 80px auto;
+}
+@media (max-width: 1400px) {
+  .le-wrap .le-inner .le-title {
+    max-width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .le-title {
+    margin: 0 auto 50px auto;
+  }
+}
+.le-wrap .le-inner .le-title img {
+  height: 75px;
+  width: auto;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .le-title img {
+    height: 65px;
+  }
+}
+.le-wrap .le-inner .le-topcontent {
+  max-width: 1250px;
+  margin: 0 auto 0 0;
+}
+@media (max-width: 1400px) {
+  .le-wrap .le-inner .le-topcontent {
+    max-width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .le-topcontent {
+    max-width: 100%;
+  }
+}
+.le-wrap .le-inner .le-topcontent .image {
+  width: calc(60% - 100px);
+  margin-right: 100px;
+}
+@media (max-width: 1400px) {
+  .le-wrap .le-inner .le-topcontent .image {
+    width: calc(60% - 50px);
+    margin-right: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .le-topcontent .image {
+    margin-right: 0px;
+    width: 100%;
+  }
+}
+.le-wrap .le-inner .le-topcontent .text {
+  width: 40%;
+}
+.le-wrap .le-inner .le-topcontent .text h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .le-topcontent .text h3 {
+    font-size: 20px;
+  }
+}
+.le-wrap .le-inner .le-topcontent .text h3 span img {
+  height: 40px;
+  width: auto;
+  position: relative;
+  margin-right: 5px;
+  top: -13px;
+}
+.le-wrap .le-inner .le-topcontent .text a {
+  font-weight: 500;
+  display: inline-block;
+  width: 180px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 15px 0;
+  margin-top: 50px;
+  color: #fff;
+  background-color: #596e80;
+  border-radius: 20px;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .le-topcontent .text {
+    width: 90%;
+    margin: 50px auto 0 auto;
+  }
+}
+.le-wrap .le-inner .le-bottomcontent {
+  margin: 80px 0 40px 0;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .le-bottomcontent {
+    margin: 60px 0 30px 0;
+  }
+}
+.le-wrap .le-inner .le-bottomcontent .le-bottom-inner {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1400px) {
+  .le-wrap .le-inner .le-bottomcontent .le-bottom-inner {
+    max-width: 90%;
+  }
+}
+.le-wrap .le-inner .le-bottomcontent .le-bottom-inner .content {
+  width: calc(50% - 60px);
+  margin-right: 60px;
+  margin-bottom: 60px;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .le-bottomcontent .le-bottom-inner .content {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+}
+.le-wrap .le-inner .le-bottomcontent .le-bottom-inner .content:nth-child(2n) {
+  margin-right: 0;
+}
+.le-wrap .le-inner .le-bottomcontent .le-bottom-inner .content .content-inner {
+  align-items: center;
+  margin-bottom: 30px;
+}
+.le-wrap .le-inner .le-bottomcontent .le-bottom-inner .content .content-inner .image {
+  width: 40%;
+}
+.le-wrap .le-inner .le-bottomcontent .le-bottom-inner .content .content-inner .title {
+  width: calc(60% - 40px);
+  text-align: center;
+  height: auto;
+  margin: 0 0 0 40px;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .le-bottomcontent .le-bottom-inner .content .content-inner .title {
+    position: relative;
+    top: 10px;
+    width: calc(60% - 20px);
+    margin: 0 0 0 20px;
+  }
+}
+.le-wrap .le-inner .le-bottomcontent .le-bottom-inner .content .content-inner .title .number {
+  height: 20px;
+  width: auto;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .le-bottomcontent .le-bottom-inner .content .content-inner .title .number {
+    height: 15px;
+  }
+}
+.le-wrap .le-inner .le-bottomcontent .le-bottom-inner .content .content-inner .title h4 {
+  font-size: 18px;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding: 0 0 10px 0;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .le-bottomcontent .le-bottom-inner .content .content-inner .title h4 {
+    font-size: 16px;
+  }
+}
+.le-wrap .le-inner .course-wrap {
+  background-image: url(/wp-content/uploads/2023/03/クラフト紙-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .course-wrap {
+    padding: 60px 0;
+  }
+}
+.le-wrap .le-inner .course-wrap .course-inner {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1400px) {
+  .le-wrap .le-inner .course-wrap .course-inner {
+    max-width: 90%;
+  }
+}
+.le-wrap .le-inner .course-wrap .course-inner .course-content div {
+  width: calc(50% - 30px);
+  margin-right: 60px;
+}
+.le-wrap .le-inner .course-wrap .course-inner .course-content div:nth-child(2) {
+  margin-right: 0px;
+}
+.le-wrap .le-inner .course-wrap .course-inner .course-content div:last-child {
+  width: 100%;
+  margin-top: 60px;
+  margin-right: 0px;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .course-wrap .course-inner .course-content div:last-child {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .course-wrap .course-inner .course-content div {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+.le-wrap .le-inner .course-wrap .course-inner .course-content .course-image-pc {
+  width: 100% !important;
+  margin-top: 60px !important;
+  margin-right: 0px;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .course-wrap .course-inner .course-content .course-image-pc {
+    display: none;
+  }
+}
+.le-wrap .le-inner .course-wrap .course-inner .course-content .course-image-sp {
+  display: none;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .course-wrap .course-inner .course-content .course-image-sp {
+    display: block;
+  }
+}
+.le-wrap .le-inner .course-wrap .course-title {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .course-wrap .course-title {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}
+.le-wrap .le-inner .course-wrap .course-title span img {
+  height: 40px;
+  width: auto;
+  position: relative;
+  margin-right: 5px;
+  margin-left: 5px;
+  top: -13px;
+}
+.le-wrap .le-inner .price-wrap {
+  margin: 100px 0;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap {
+    margin: 60px 0;
+  }
+}
+.le-wrap .le-inner .price-wrap .price-inner {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+@media (max-width: 1400px) {
+  .le-wrap .le-inner .price-wrap .price-inner {
+    max-width: 90%;
+  }
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-title {
+  text-align: center;
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-title h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .price-inner .price-title h3 {
+    font-size: 20px;
+  }
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-title p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .price-inner .price-title p {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-title h4 {
+  font-size: 26px;
+  display: inline-block;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  border-top: 2px solid #643700;
+  border-bottom: 2px solid #643700;
+  width: 450px;
+  margin-bottom: 80px;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .price-inner .price-title h4 {
+    width: 90%;
+    margin-bottom: 60px;
+    font-size: 22px;
+  }
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-subtitle {
+  margin-bottom: 70px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .price-inner .price-subtitle {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-subtitle img {
+  height: 40px;
+  width: auto;
+  position: relative;
+  top: -10px;
+  margin: 0 15px;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .price-inner .price-subtitle img {
+    margin: 0 10px;
+    height: 20px;
+    top: 0px;
+  }
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-subtitle p {
+  font-size: 24px;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .price-inner .price-subtitle p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .price-inner .price-subtitle p:last-child {
+    font-size: 14px;
+  }
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-table .price-table-title {
+  background-color: #643700;
+  padding: 20px 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .price-inner .price-table .price-table-title {
+    font-size: 16px;
+  }
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-table .price-table-subtitle {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .price-inner .price-table .price-table-subtitle {
+    font-size: 16px;
+  }
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-table .middleschool-title {
+  margin-top: 30px;
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-table table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-table table th {
+  border: 2px solid #643700;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .price-inner .price-table table th {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-table table td {
+  border: 2px solid #643700;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .price-inner .price-table table td {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-table.four-c table th {
+  width: 25%;
+}
+.le-wrap .le-inner .price-wrap .price-inner .price-table.four-c table td {
+  width: 25%;
+}
+.le-wrap .le-inner .price-wrap .op-grwrap {
+  background-color: #fff;
+  padding: 80px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 80px 0 100px 0;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .op-grwrap {
+    margin: 60px 0;
+    padding: 40px 15px;
+  }
+}
+.le-wrap .le-inner .price-wrap .op-grwrap .op-title {
+  margin-bottom: 70px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .op-grwrap .op-title {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+.le-wrap .le-inner .price-wrap .op-grwrap .gr-title {
+  text-align: center;
+  margin: 70px 0 70px 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .price-wrap .op-grwrap .gr-title {
+    margin: 30px 0;
+    font-size: 20px;
+  }
+}
+.le-wrap .le-inner .price-wrap .op-grwrap .gr-table-bottomtext {
+  margin-top: 30px;
+  font-weight: 500;
+}
+.le-wrap .le-inner .taiken-wrap {
+  text-align: center;
+}
+.le-wrap .le-inner .taiken-wrap h3 {
+  font-size: 26px;
+  display: inline-block;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  border-top: 2px solid #643700;
+  border-bottom: 2px solid #643700;
+  width: 450px;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .taiken-wrap h3 {
+    width: 100%;
+    font-size: 22px;
+  }
+}
+.le-wrap .le-inner .taiken-wrap p {
+  font-size: 26px;
+  display: inline-block;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #643700;
+  width: 450px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .le-wrap .le-inner .taiken-wrap p {
+    width: 100%;
+    font-size: 22px;
+  }
+}
+
+#price {
+  margin-top: -10px;
+  padding-top: 10px;
+}/*# sourceMappingURL=lesson.css.map */

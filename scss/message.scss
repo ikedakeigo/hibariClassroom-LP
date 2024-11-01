@@ -1,0 +1,107 @@
+@use 'option';
+
+.inner {
+	padding: 210px 0 0 0;
+	max-width: 1000px;
+	margin: 0 auto 100px auto;
+
+	@include option.pad{
+		max-width: 90%;
+	}
+
+	@include option.sp{
+		max-width: 90%;
+		margin: 0 auto 80px auto;
+	}
+
+	.box{
+		margin-bottom: 170px;
+
+		@include option.sp{
+			margin-bottom: 60px;
+		}
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		.top{
+			align-items: flex-end;
+			padding-bottom: 50px;
+			margin-bottom: 50px;
+
+			@include option.sp{
+				margin-bottom: 30px;
+			}
+
+			&::after{
+				content:'';
+				display: inline-block;
+				width: 100%;
+				height: 26px;
+				background-image: url(/wp-content/uploads/2023/04/line.png);
+				background-size: cover;
+				position: absolute;
+				bottom: 0;
+			}
+
+			.left{
+				width: 330px;
+
+				@include option.sp{
+					width: 100%;
+					margin-bottom: 20px;
+				}
+			}
+
+			.right{
+				margin-left: 80px;
+
+				@include option.sp{
+					margin-left: 0px;
+				}
+
+				.text{
+					font-size: 21px;
+					margin-bottom: 70px;
+					font-weight: 500;
+					@include option.letter-spacing(40);
+					
+					@include option.sp{
+						margin-bottom: 30px;
+					}
+				}
+
+				.name{
+					font-size: 32px;
+					font-weight:500;
+					@include option.sp{
+						font-size: 24px;
+					}
+					@include option.letter-spacing(80);
+
+					span{
+						display: block;
+						margin-bottom: 20px;
+						font-size: 16px;
+						font-weight:500;
+					}
+				}
+			}
+		}
+
+		.bottom{
+			@include option.letter-spacing(0);
+			line-height: 2;
+		}
+	}
+}
+
+#maseege-one{
+	margin-top:-80px;
+	padding-top:80px;
+}
+#maseege-two{
+	margin-top:-80px;
+	padding-top:80px;
+}

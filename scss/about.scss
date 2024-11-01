@@ -1,0 +1,239 @@
+@use 'option';
+
+.ot-wrap{
+	padding:210px 0 0px 0;
+	@include option.sp{
+		padding:170px 0 0 0;
+	}
+	.ot-inner{
+		max-width: 1250px;
+		margin:0 0 0 auto;
+		padding-bottom:100px;
+		@include option.pc{
+			max-width: 95%;
+		}
+		@include option.sp{
+			max-width: 100%;
+			padding-bottom:0px;
+		}
+		.ot-title{
+			margin: 0 0 50px 0;
+			img{
+				height:70px;
+				width:auto;
+				@include option.pc{
+					height:60px;
+				}
+			}
+		}
+		.ot-content{
+			&:first-child{
+				width:calc(50% - 70px);
+				margin-right:70px;
+				@include option.sp{
+					width:90%;
+					margin:0 auto 40px auto;
+				}
+			}
+			&:last-child{
+				width:50%;
+				position: relative;
+				top:120px;
+				@include option.sp{
+					display: none;
+				}
+			}
+			.ot-subtitle{
+				margin-bottom:40px;
+				img{
+					height: 90px;
+					width:auto;
+					@include option.pc{
+						height: 60px;
+					}
+				}
+			}
+			.name{
+				margin-top:30px;
+			}
+		}
+	}
+}
+
+.ot-content-sp{
+	display: none;
+	@include option.sp{
+		width:100%;
+		display: block;
+		margin-bottom:50px;
+	}
+}
+
+.ot-bottom-wrap{
+	background-image: url(/wp-content/uploads/2023/03/クラフト紙-min.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding:100px 0;
+	@include option.sp{
+		padding:50px 0 50px 0;
+	}
+	.ot-bottom-inner{
+		max-width: 1000px;
+		margin:0 auto;
+		@include option.pad{
+			max-width: 90%;
+		}
+		@include option.sp{
+			max-width: 100%;
+		}
+		.ot-bottom-content {
+			align-items: center;
+			@include option.pad{
+				margin-top:40px;
+			}
+			.image{
+				width:calc(55% - 70px);
+				margin-right: 70px;
+				@include option.sp{
+					width:50%;
+					margin-right:0px;
+					margin-top:30px;
+				}
+			}
+			.text{
+				width: 45%;
+				img{
+					height:100px;
+					width: auto;
+					margin-bottom:40px;
+					@include option.pc{
+						height:70px;
+					}
+				}
+				@include option.sp{
+					width: 100%;
+				}
+			}
+			&:first-child{
+				@include option.sp{
+					flex-wrap:wrap-reverse;
+					margin:0 auto;
+					width:90%;
+				}
+			}
+			&:nth-child(2){
+				margin:0px auto 0 auto;
+				width:90%;
+				@include option.pad{
+					margin:40px auto 0 auto;
+				}
+				@include option.sp{
+					width: 100%;
+					margin:-40px auto 0 auto;
+				}
+			}
+			&:nth-child(3){
+				align-items: flex-end;
+				@include option.sp{
+					margin:50px auto 0 auto;
+					width:90%;
+				}
+				.image{
+					margin-right: 0px;
+					margin-left:70px;
+					@include option.sp{
+						margin-left:0;
+					}
+				}
+				.text{
+					img{
+						height:35px;
+						@include option.pc{
+							height: 25px;
+						}
+					}
+				}
+				@include option.pad{
+					margin-top:40px;
+				}
+			}
+			&:last-child{
+				.text{
+					width:70%;
+					margin-right: 0;
+					margin-top: 100px;
+					background-color:#643700;
+					border-radius: 20px;
+					box-sizing: border-box;
+					padding:40px 60px;
+					img{
+						height:25px;
+						@include option.pc{
+							height:20px;
+						}
+						@include option.pc{
+							height:18px;
+						}
+					}
+					ul{
+						li{
+							color:#fff;
+						}
+					}
+					@include option.sp{
+						width:100%;
+					margin-top: 50px;
+					border-radius: 0px;
+					box-sizing: border-box;
+					padding:40px 5%;
+					}
+				}
+				.absolute{
+					top:-50px;
+					right:30px;
+					@include option.sp{
+						top:-240px;
+					}
+					img{
+						height: 200px;
+						width:auto;
+						@include option.sp{
+							height: 180px;
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+.ot-bottom-content-imagewrap{
+	max-width: 1000px;
+	margin:-160px auto 0 auto;
+	.ot-bottom-content-image{
+		width:70%;
+		position: relative;
+		z-index:2;
+		margin:0 0 0 auto;
+	}
+	
+}
+
+.ot-bottom-content-imagewrap-pc{
+	@include option.sp{
+		display: none;
+	}
+}
+
+.ot-bottom-content-imagewrap-sp{
+	margin: -20px auto 0 auto;
+	display: none;
+	@include option.sp{
+		display: block;
+	}
+	.ot-bottom-content-image{
+		width: 90%;
+		margin: 0 auto;
+	}
+}

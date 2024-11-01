@@ -1,0 +1,464 @@
+@use 'option';
+
+#content {
+	padding: 210px 0 0 0;
+
+	@include option.sp {
+		padding: 170px 0 0 0;
+	}
+
+	.inner {
+		max-width: 1250px;
+		margin: 0 auto 80px auto;
+		@include option.pc {
+			max-width: 90%;
+		}
+		@include option.pad {
+			max-width: 90%;
+		}
+
+		@include option.sp {
+			max-width: 100%;
+			margin: 0 auto 30px auto;
+		}
+
+		.headline {
+			margin-bottom: 100px;
+			@include option.pad{
+				margin-bottom: 70px;
+			}
+			@include option.sp{
+				max-width: 90%;
+				margin: 0 auto;
+				margin-bottom: 50px;
+			}
+
+			img {
+				height: 90px;
+				width: auto;
+				@include option.pad{
+					height: 70px;
+				}
+				@include option.sp{
+					height: 60px;
+				}
+			}
+		}
+
+		.anchors {
+			justify-content: center;
+			margin-bottom: 100px;
+			@include option.pad{
+				margin-bottom: 60px;
+			}
+			@include option.tab{
+				justify-content: center;
+				margin-bottom:40px !important;
+			}
+			@include option.sp{
+				margin-bottom: 20px;
+			}
+
+			.link {
+				@include option.tab{
+					width:100%;
+					text-align: center;
+				}
+				a {
+					width: calc(250px - 10px);
+					margin-right: 15px;
+					background-color: #643700;
+					padding: 5px 0;
+					box-sizing: border-box;
+					color: #fff;
+					border-radius: 10px;
+					font-weight:500;
+					@include option.tab{
+						margin:0 auto 10px auto;
+					}
+					text-align: center;
+					@include option.sp{
+						width: 250px;
+					}
+				}
+
+				&:last-child {
+					a {
+						margin-right: 0px;
+						@include option.tab{
+							margin-right: auto;
+						}
+					}
+				}
+			}
+		}
+
+		#takaraduka {
+			margin-bottom: 100px;
+			margin-top:-50px;
+			padding-top:50px;
+			@include option.pad{
+				margin-bottom: 50px;
+			}
+			@include option.sp{
+				margin-bottom: 40px;
+			}
+
+			.top {
+				margin-bottom: 10px;
+				background-color: #D6CDBE;
+				padding: 30px 60px;
+				box-sizing: border-box;
+
+				@include option.sp{
+					padding:40px 30px;
+					margin-bottom: 0;
+				}
+
+				.left {
+					width: 25%;
+					font-size: 30px;
+					font-weight:500;
+					border-bottom: double 5px #643700;
+					border-top: double 5px #643700;
+					align-items: center;
+					justify-content: center;
+					height: 100px;
+					@include option.sp{
+						width: 50%;
+						margin: 0 auto;
+						margin-bottom: 30px;
+						span{
+							padding: 20px 0;
+							box-sizing: border-box;
+							font-size: 20px;
+						}
+					}
+					@include option.pad{
+						font-size: 24px;
+						height: 80px;
+						width:35%;
+					}
+					@include option.sp{
+						width:100%;
+					}
+				}
+
+				.right {
+					width: calc(75% - 60px);
+					margin-left: 60px;
+					@include option.pad{
+						width:calc(65% - 40px);
+						margin-left: 40px;
+					}
+					@include option.sp{
+						width: 100%;
+						margin-left: 0px;
+					}
+				}
+			}
+
+			.bottom {
+				.image {
+					margin-bottom: 10px;
+
+					img {
+						width: 33.3%;
+					}
+				}
+
+				.content {
+					@include option.sp{
+						padding: 10px;
+						box-sizing: border-box;
+						flex-direction: column-reverse;
+					}
+
+					.map {
+						width: calc(50% - 5px);
+
+						@include option.sp{
+							width: 100%;
+							height: 300px;
+						}
+					}
+
+					.box {
+						width: calc(50% - 5px);
+						margin-left: 10px;
+						padding: 30px 20px;
+						box-sizing: border-box;
+						background-color: #fff;
+
+						@include option.sp{
+							width: 100%;
+							margin-left: 0px;
+							margin-bottom: 10px;
+						}
+
+						.flex {
+							border-bottom: 1px solid #D6CDBE;
+							padding: 20px 0;
+							box-sizing: border-box;
+							align-items: center;
+							@include option.sp{
+								align-items: flex-start;
+							}
+							&:first-child {
+								border-top: 1px solid #D6CDBE;
+							}
+
+							.left {
+								width: 30%;
+								@include option.tab{
+									width: calc(30% - 10px);
+									margin-right:10px;
+								}
+								@include option.sp{
+									font-size: 14px;
+								}
+							}
+
+							.right {
+								width: 70%;
+
+								@include option.sp{
+									font-size: 14px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#nishinomiya {
+			margin-top:-50px;
+			padding-top:50px;
+			.top {
+				margin-bottom: 10px;
+
+				.left {
+					width: calc(50% - 5px);
+					margin-right: 10px;
+					background-color: #D6CDBE;
+					padding: 30px 60px;
+					box-sizing: border-box;
+
+					@include option.sp{
+						width: 100%;
+						padding:40px 30px;
+						margin-right:0;
+					}
+
+					span {
+						width: 50%;
+						font-size: 30px;
+						font-weight:500;
+						border-bottom: double 5px #643700;
+						border-top: double 5px #643700;
+						margin: 0 auto;
+						margin-bottom: 30px;
+						justify-content: center;
+						align-items: center;
+						height: 100px;
+						@include option.pad{
+							font-size: 24px;
+							height: 80px;
+						}
+						@include option.tab{
+							width: 100%;
+						}
+						@include option.sp{
+							font-size: 20px;
+						}
+					}
+				}
+
+				.right {
+					width: calc(50% - 5px);
+
+					@include option.sp{
+						width: 100%;
+						margin-left: 0px;
+					}
+					img{
+						object-fit: cover;
+						height: 100%;
+					}
+				}
+			}
+
+			.bottom {
+				.image {
+					margin-bottom: 20px;
+
+					img {
+						width: 33.3%;
+					}
+				}
+
+				.content {
+					@include option.sp{
+						padding: 10px;
+						padding-top: 0;
+						box-sizing: border-box;
+						flex-direction: column-reverse;
+					}
+
+					.map {
+						width: calc(50% - 5px);
+						@include option.sp{
+							width: 100%;
+							height: 300px;
+						}
+					}
+
+					.box {
+						width: calc(50% - 5px);
+						margin-left: 10px;
+						padding: 30px 20px;
+						box-sizing: border-box;
+						background-color: #fff;
+
+						@include option.sp{
+							width: 100%;
+							margin-left: 0px;
+							margin-bottom: 10px;
+						}
+
+						.flex {
+							border-bottom: 1px solid #D6CDBE;
+							padding: 20px 0;
+							box-sizing: border-box;
+							align-items: center;
+							@include option.sp{
+								align-items:flex-start;
+							}
+							&:first-child {
+								border-top: 1px solid #D6CDBE;
+							}
+
+							.left {
+								width: 30%;
+								@include option.sp{
+									font-size: 14px;
+								}
+							}
+
+							.right {
+								width: 70%;
+								@include option.sp{
+									font-size:14px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#special {
+		background-image: url(/wp-content/uploads/2023/04/back-ashiya.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 80px 0;
+		box-sizing: border-box;
+		@include option.sp{
+			padding: 40px 5%;
+		}
+
+		.inner {
+			margin: 0 auto;
+
+			.headline {
+				text-align: center;
+				font-size: 24px;
+				font-weight:500;
+
+				@include option.sp{
+					font-size: 20px;
+				}
+			}
+
+			.box {
+				.top {
+					align-items: center;
+					justify-content: center;
+					margin-bottom: 60px;
+					font-weight:500;
+					font-size: 24px;
+					@include option.sp{
+						margin-bottom: 30px;
+						font-size: 18px;
+					}
+					&::before,
+					&::after {
+						content: "";
+						flex-grow: 1;
+						border-top: 5px double #643700;
+					}
+
+					&:before {
+						margin-right: 1rem;
+					}
+
+					&:after {
+						margin-left: 1rem;
+					}
+				}
+
+				.bottom{
+					margin-bottom: 60px;
+
+					@include option.sp{
+						margin-bottom: 0px;
+					}
+
+					.left{
+						width: calc(50% - 20px);
+						margin-right: 20px;
+
+						@include option.sp{
+							width: 90%;
+							margin-right: auto;
+							margin-bottom: 10px;
+							margin-left:auto;
+						}
+					}
+
+					.right{
+						width: calc(50% - 20px);
+						margin-left:20px;
+						@include option.sp{
+							width: 90%;
+							margin-bottom: 10px;
+							margin-left:auto;
+							margin-right: auto;
+						}
+					}
+				}
+				.text{
+					@include option.sp{
+						width:90%;
+						margin:0 auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+#takaraduka-anchor{
+	padding-top:50px;
+	margin-top:-50px;
+}
+#nishinomiya-anchor{
+	padding-top:50px;
+	margin-top:-50px;
+}
+#special-anchor{
+	padding-top:50px;
+	margin-top:-50px;
+}
