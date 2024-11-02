@@ -5,7 +5,9 @@
       <div class="p-hero__inner inner">
         <header class="p-hero__title-wrap">
           <h2 class="p-hero__title main-title">
-            <span>みんなで奏でて<br>「合う」を楽しむ</span><br>合奏倶楽部です
+            <span>みんなで奏でて</span> <br>
+            <span>「合う」を楽しむ</span> <br>
+            <span>合奏倶楽部です</span>
           </h2>
         </header>
         <div class="p-hero__wrap">
@@ -22,8 +24,8 @@
       <div class="p-about__inner inner">
         <div class="p-about__title-wrap">
           <h2 class="p-about__title main-title">
+            <span class="first">ひばり合奏倶楽部とは</span><br>
             <span>
-              ひばり合奏倶楽部とは<br>
               大切にしているのは、<br>
               音を通して<br>
               人と人の繋がりを<br>
@@ -49,7 +51,7 @@
 
     <!-- work -->
     <section class="p-work l-work  " id="">
-      <div class="p-work__inner inner">
+      <div class="p-work__inner ">
         <div class="p-work__title-wrap">
           <p class="p-work__sub-title sub-title">
             ひばり合奏倶楽部の
@@ -75,84 +77,91 @@
             </div>
           </div>
 
-          <!-- ひばりっ子音楽隊の詳細情報 -->
-          <div class="p-work__details">
-            <h4 class="p-work__details-title">ひばりっ子音楽隊</h4>
-            <p class="p-work__details-description">
-              小学生以下を対象とし、楽器はなんでもOK！ （カスタネットなどの打楽器も大丈夫です）リトミック×アンサンブルで楽しく学びます♪楽譜や音符に捉われず、自分の感じた音楽を表現し、それが周りの子とどんな化学反応を起こすのか…是非体感してみてほしいです！
-            </p>
-
-            <!-- 練習内容 -->
-            <div class="p-work__practice">
-              <h5 class="p-work__practice-title">練習内容</h5>
-              <p class="p-work__practice-description">
-                様々な楽器を使い、みんなで音楽を奏でます♪ <br>
-                例えばハンドベルでは1人1音ずつ担当し、みんなで協力して一つの曲を奏で、時には合唱なども取り入れつつ、自然と協調性やリズム感など、音楽に必要な力を身につけていきます。
+          <div class="p-work__class-wrap item01">
+            <!-- ひばりっ子音楽隊の詳細情報 -->
+            <div class="p-work__details">
+              <h4 class="p-work__details-title">ひばりっ子音楽隊</h4>
+              <p class="p-work__details-description">
+                小学生以下を対象とし、楽器はなんでもOK！ （カスタネットなどの打楽器も大丈夫です）リトミック×アンサンブルで楽しく学びます♪楽譜や音符に捉われず、自分の感じた音楽を表現し、それが周りの子とどんな化学反応を起こすのか…是非体感してみてほしいです！
               </p>
+              <!-- 練習内容 -->
+              <div class="p-work__practice">
+                <div class="p-work__practice-head">
+                  <h5 class="p-work__practice-title">練習内容</h5>
+                </div>
+                <p class="p-work__practice-description">
+                  様々な楽器を使い、みんなで音楽を奏でます♪ <br>
+                  例えばハンドベルでは1人1音ずつ担当し、みんなで協力して一つの曲を奏で、時には合唱なども取り入れつつ、自然と協調性やリズム感など、音楽に必要な力を身につけていきます。
+                </p>
+              </div>
+              <!-- 開催日時 -->
+              <div class="p-work__schedule">
+                <div class="p-work__practice-head">
+                  <h5 class="p-work__schedule-title">開催日時</h5>
+                </div>
+                <p class="p-work__schedule-description">
+                  月1回 基本的に日曜日 13:00〜14:30
+                </p>
+              </div>
+              <!-- 価格 -->
+              <div class="p-work__price">
+                <div class="p-work__practice-head">
+                  <h5 class="p-work__price-title">価格</h5>
+                </div>
+                <p class="p-work__price-description">1回：3,300円（税込）</p>
+              </div>
             </div>
-
-            <!-- 開催日時 -->
-            <div class="p-work__schedule">
-              <h5 class="p-work__schedule-title">開催日時</h5>
-              <p class="p-work__schedule-description">
-                月1回 基本的に日曜日 13:00〜14:30
-              </p>
-            </div>
-
-            <!-- 価格 -->
-            <div class="p-work__price">
-              <h5 class="p-work__price-title">価格</h5>
-              <p class="p-work__price-description">1回：3,300円（税込）</p>
+            <!-- 画像セクション -->
+            <div class="p-work__images">
+              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像2" class="p-work__image">
+              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像3" class="p-work__image">
+              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像4" class="p-work__image">
+              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像5" class="p-work__image">
             </div>
           </div>
 
-          <!-- 画像セクション -->
-          <div class="p-work__images">
-            <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
-            <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像2" class="p-work__image">
-            <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像3" class="p-work__image">
-            <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像4" class="p-work__image">
-            <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像5" class="p-work__image">
-          </div>
-
-          <!-- ひばりジュニア弦楽アンサンブルの詳細情報 -->
-          <div class="p-work__details">
-            <h4 class="p-work__details-title">ひばりジュニア弦楽アンサンブル</h4>
-            <p class="p-work__details-description">
-              一定レベル（講師判断）をクリアした、小学生〜大学生の弦楽合奏団！イベントに向けて専門的な楽曲に取り組んでいきます。今年度はクリスマスコンサートに向けてコレルリ作曲 合奏協奏曲第8番ト短調「クリスマス協奏曲」を行う予定です♪ ※楽章未定
-            </p>
-
-            <!-- 練習内容 -->
-            <div class="p-work__practice">
-              <h5 class="p-work__practice-title">練習内容</h5>
-              <p class="p-work__practice-description">
-                クラシックなどの楽曲を用いて、ソロではなくアンサンブルだからこそ得られる協調性や、パートごとの役割を通して楽曲の音楽的な仕組みを学ぶなど、表現力を身につけていきます。時には講師の作曲した楽曲を用いて、直接作曲者から曲に込めた思いや意図などを聞きながら、練習に取り入れていきます。
-
+          <div class="p-work__class-wrap">
+            <!-- ひばりジュニア弦楽アンサンブルの詳細情報 -->
+            <div class="p-work__details">
+              <h4 class="p-work__details-title">ひばりジュニア弦楽アンサンブル</h4>
+              <p class="p-work__details-description">
+                一定レベル（講師判断）をクリアした、小学生〜大学生の弦楽合奏団！イベントに向けて専門的な楽曲に取り組んでいきます。今年度はクリスマスコンサートに向けてコレルリ作曲 合奏協奏曲第8番ト短調「クリスマス協奏曲」を行う予定です♪ ※楽章未定
               </p>
+              <!-- 練習内容 -->
+              <div class="p-work__practice">
+                <div class="p-work__practice-head">
+                  <h5 class="p-work__practice-title">練習内容</h5>
+                </div>
+                <p class="p-work__practice-description">
+                  クラシックなどの楽曲を用いて、ソロではなくアンサンブルだからこそ得られる協調性や、パートごとの役割を通して楽曲の音楽的な仕組みを学ぶなど、表現力を身につけていきます。時には講師の作曲した楽曲を用いて、直接作曲者から曲に込めた思いや意図などを聞きながら、練習に取り入れていきます。
+                </p>
+              </div>
+              <!-- 開催日時 -->
+              <div class="p-work__schedule">
+                <div class="p-work__practice-head">
+                  <h5 class="p-work__schedule-title">開催日時</h5>
+                </div>
+                <p class="p-work__schedule-description">
+                  月1回 基本的に日曜日 14:30〜16:00
+                </p>
+              </div>
+              <!-- 価格 -->
+              <div class="p-work__price">
+                <div class="p-work__practice-head">
+                  <h5 class="p-work__price-title">価格</h5>
+                </div>
+                <p class="p-work__price-description">1回：3,300円（税込）</p>
+              </div>
             </div>
-
-            <!-- 開催日時 -->
-            <div class="p-work__schedule">
-              <h5 class="p-work__schedule-title">開催日時</h5>
-              <p class="p-work__schedule-description">
-                月1回 基本的に日曜日 14:30〜16:00
-              </p>
+            <!-- 画像セクション -->
+            <div class="p-work__images">
+              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像2" class="p-work__image">
+              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像3" class="p-work__image">
+              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像4" class="p-work__image">
+              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像5" class="p-work__image">
             </div>
-
-            <!-- 価格 -->
-            <div class="p-work__price">
-              <h5 class="p-work__price-title">価格</h5>
-              <p class="p-work__price-description">1回：3,300円（税込）</p>
-            </div>
-          </div>
-
-          <!-- 画像セクション -->
-          <div class="p-work__images">
-            <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
-            <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像2" class="p-work__image">
-            <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像3" class="p-work__image">
-            <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像4" class="p-work__image">
-            <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像5" class="p-work__image">
           </div>
         </div>
 
