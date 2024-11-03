@@ -4,26 +4,70 @@
     <section class="p-hero l-hero" id="hero">
       <div class="p-hero__inner inner">
         <header class="p-hero__title-wrap">
-          <h2 class="p-hero__title main-title">
+          <h2 class="p-hero__title">
             <span>みんなで奏でて</span> <br>
             <span>「合う」を楽しむ</span> <br>
             <span>合奏倶楽部です</span>
           </h2>
         </header>
         <div class="p-hero__wrap">
-          <figure class="p-hero__image">
-            <img src="https://placehold.jp/1212x414.png" alt="合奏を楽しむメンバーの様子">
+          <!-- 左側の画像グループ -->
+          <div class="p-hero__images-group p-hero__images-group--left">
+            <figure class="p-hero__image p-hero__image--left">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/hero/hero_imag01.png" alt="合奏を楽しむメンバーの様子">
+            </figure>
+            <figure class="p-hero__image p-hero__image--left">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/hero/hero_imag02.png" alt="合奏を楽しむメンバーの様子">
+            </figure>
+            <figure class="p-hero__image p-hero__image--left">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/hero/hero_imag03.png" alt="合奏を楽しむメンバーの様子">
+          </div>
+          <!-- 右側の画像グループ -->
+          <div class="p-hero__images-group p-hero__images-group--right">
+            <figure class="p-hero__image p-hero__image--right">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/hero/hero_imag04.png" alt="合奏を楽しむメンバーの様子">
+            </figure>
+            <figure class="p-hero__image p-hero__image--right">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/hero/hero_imag05.png" alt="合奏を楽しむメンバーの様子">
+            </figure>
+            <!-- </div> -->
+          </div>
+        </div>
+
+        <!-- 背景の形状 -->
+        <div class="shape-group">
+          <div class="shape" data-shape="circle" data-color="blue"></div>
+          <div class="shape" data-shape="circle" data-color="green"></div>
+          <div class="shape" data-shape="circle" data-color="pink"></div>
+          <div class="shape" data-shape="triangle" data-color="blue"></div>
+          <div class="shape" data-shape="triangle" data-color="pink"></div>
+          <div class="shape" data-shape="square" data-color="green"></div>
+          <div class="shape" data-shape="square" data-color="yellow"></div>
+          <div class="shape" data-shape="note"></div>
+          <div class="shape" data-shape="note" data-number="2"></div>
+          <div class="shape" data-shape="line" data-color="blue"></div>
+          <div class="shape" data-shape="line" data-color="pink"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- scroll-image -->
+    <section class="p-scroll-image l-scroll-image" id="">
+      <div class="p-scroll-image__inner inner">
+        <div class="p-scroll-image__wrap">
+          <figure class="p-scroll-image__item">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/hero/hero-bottom.png" alt="合奏を楽しむメンバーの様子">
           </figure>
         </div>
       </div>
     </section>
 
-
     <!-- about -->
-    <section class="p-about l-about  " id="">
+    <section class="p-about l-about" id="">
       <div class="p-about__inner inner">
         <div class="p-about__title-wrap">
-          <h2 class="p-about__title main-title">
+          <h2 class="p-about__title">
             <span class="first">ひばり合奏倶楽部とは</span><br>
             <span>
               大切にしているのは、<br>
@@ -43,15 +87,34 @@
             両方を育てます！
           </p>
         </div>
-        <div class="p-about__wrap">
-          <p></p>
+        <!-- 背景の形状 -->
+        <div class="shape-group">
+          <div class="shape" data-shape="circle" data-color="blue"></div>
+          <div class="shape" data-shape="circle" data-color="green"></div>
+          <div class="shape" data-shape="circle" data-color="pink"></div>
+          <div class="shape" data-shape="triangle" data-color="blue"></div>
+          <div class="shape" data-shape="triangle" data-color="pink"></div>
+          <div class="shape" data-shape="square" data-color="green"></div>
+          <div class="shape" data-shape="square" data-color="yellow"></div>
+        </div>
+        <div class="p-about__image-item01">
+          <picture>
+            <!-- <source srcset="<?php echo get_template_directory_uri(); ?>/image/about/about-image-pc.png" media="(min-width: 768px)"> -->
+            <img src="<?php echo get_template_directory_uri(); ?>/image/about/about_image01.png" alt="ひばり合奏倶楽部の様子">
+          </picture>
+        </div>
+        <div class="p-about__image-item02">
+          <picture>
+            <!-- <source srcset="<?php echo get_template_directory_uri(); ?>/image/about/about-image-pc.png" media="(min-width: 768px)"> -->
+            <img src="<?php echo get_template_directory_uri(); ?>/image/about/about_image02.png" alt="ひばり合奏倶楽部の様子">
+          </picture>
         </div>
       </div>
     </section>
 
     <!-- work -->
-    <section class="p-work l-work  " id="">
-      <div class="p-work__inner ">
+    <section class="p-work l-work" id="">
+      <div class="p-work__inner">
         <div class="p-work__title-wrap">
           <p class="p-work__sub-title sub-title">
             ひばり合奏倶楽部の
@@ -59,19 +122,26 @@
           <h2 class="p-work__title main-title">
             <span>2つのクラス</span>
           </h2>
-
+          <div class="title-icon-group">
+            <div class="shape" data-shape="circle" data-color="gray"></div>
+            <div class="shape" data-shape="circle" data-color="pink"></div>
+            <div class="shape" data-shape="triangle" data-color="blue"></div>
+            <div class="shape" data-shape="triangle" data-color="green"></div>
+            <div class="shape" data-shape="square" data-color="yellow"></div>
+            <div class="shape" data-shape="square" data-color="yellow" data-number="2"></div>
+          </div>
         </div>
         <div class="p-work__wrap">
           <div class="p-work__class-container">
 
             <!-- ひばりっ子音楽隊 -->
-            <div class="p-work__class-item">
+            <div class="p-work__class-item pink">
               <p class="p-work__class-description">小学生以下</p>
               <h3 class="p-work__class-title">ひばりっ子音楽隊</h3>
             </div>
 
             <!-- ひばりジュニア弦楽アンサンブル -->
-            <div class="p-work__class-item">
+            <div class="p-work__class-item green">
               <p class="p-work__class-description">一定レベルをクリアした、小学生〜大学生</p>
               <h3 class="p-work__class-title">ひばりジュニア弦楽アンサンブル</h3>
             </div>
@@ -113,25 +183,24 @@
             </div>
             <!-- 画像セクション -->
             <div class="p-work__images">
-              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
-              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像2" class="p-work__image">
-              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像3" class="p-work__image">
-              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像4" class="p-work__image">
-              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像5" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image01.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image02.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image03.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image04.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
             </div>
           </div>
 
           <div class="p-work__class-wrap">
             <!-- ひばりジュニア弦楽アンサンブルの詳細情報 -->
             <div class="p-work__details">
-              <h4 class="p-work__details-title">ひばりジュニア弦楽アンサンブル</h4>
+              <h4 class="p-work__details-title green">ひばりジュニア弦楽アンサンブル</h4>
               <p class="p-work__details-description">
                 一定レベル（講師判断）をクリアした、小学生〜大学生の弦楽合奏団！イベントに向けて専門的な楽曲に取り組んでいきます。今年度はクリスマスコンサートに向けてコレルリ作曲 合奏協奏曲第8番ト短調「クリスマス協奏曲」を行う予定です♪ ※楽章未定
               </p>
               <!-- 練習内容 -->
               <div class="p-work__practice">
-                <div class="p-work__practice-head">
-                  <h5 class="p-work__practice-title">練習内容</h5>
+                <div class="p-work__practice-head green">
+                  <h5 class="p-work__practice-title green">練習内容</h5>
                 </div>
                 <p class="p-work__practice-description">
                   クラシックなどの楽曲を用いて、ソロではなくアンサンブルだからこそ得られる協調性や、パートごとの役割を通して楽曲の音楽的な仕組みを学ぶなど、表現力を身につけていきます。時には講師の作曲した楽曲を用いて、直接作曲者から曲に込めた思いや意図などを聞きながら、練習に取り入れていきます。
@@ -139,8 +208,8 @@
               </div>
               <!-- 開催日時 -->
               <div class="p-work__schedule">
-                <div class="p-work__practice-head">
-                  <h5 class="p-work__schedule-title">開催日時</h5>
+                <div class="p-work__practice-head green">
+                  <h5 class="p-work__schedule-title green">開催日時</h5>
                 </div>
                 <p class="p-work__schedule-description">
                   月1回 基本的に日曜日 14:30〜16:00
@@ -148,19 +217,18 @@
               </div>
               <!-- 価格 -->
               <div class="p-work__price">
-                <div class="p-work__practice-head">
-                  <h5 class="p-work__price-title">価格</h5>
+                <div class="p-work__practice-head green">
+                  <h5 class="p-work__price-title green">価格</h5>
                 </div>
                 <p class="p-work__price-description">1回：3,300円（税込）</p>
               </div>
             </div>
             <!-- 画像セクション -->
             <div class="p-work__images">
-              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
-              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像2" class="p-work__image">
-              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像3" class="p-work__image">
-              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像4" class="p-work__image">
-              <img src="https://placehold.jp/470x270.png" alt="ひばりっ子音楽隊の画像5" class="p-work__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image05.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image06.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image07.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image08.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
             </div>
           </div>
         </div>
@@ -175,6 +243,16 @@
           <h2 class="p-teacher__title main-title">
             <span>講師</span>
           </h2>
+
+          <div class="title-icon-group">
+            <div class="shape" data-shape="circle" data-color="gray"></div>
+            <div class="shape" data-shape="circle" data-color="pink"></div>
+            <div class="shape" data-shape="triangle" data-color="blue"></div>
+            <div class="shape" data-shape="triangle" data-color="green"></div>
+            <div class="shape" data-shape="square" data-color="yellow"></div>
+            <div class="shape" data-shape="square" data-color="yellow" data-number="2"></div>
+          </div>
+
         </div>
         <div class="p-teacher__wrap">
 
@@ -182,28 +260,28 @@
           <div class="p-teacher__card">
             <div class="p-teacher__role">teacher</div>
             <h3 class="p-teacher__name">大熊勇希 部長</h3>
-            <img src="https://placehold.jp/380x340.png" alt="大熊勇希 部長" class="p-teacher__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image01.png" alt="大熊勇希 部長" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <div class="p-teacher__card">
             <div class="p-teacher__role">teacher</div>
             <h3 class="p-teacher__name">山内睦大 副部長</h3>
-            <img src="https://placehold.jp/380x340.png" alt="山内睦大 副部長" class="p-teacher__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image02.png" alt="山内睦大 副部長" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <div class="p-teacher__card">
             <div class="p-teacher__role">teacher</div>
             <h3 class="p-teacher__name">井木恵</h3>
-            <img src="https://placehold.jp/380x340.png" alt="井木恵" class="p-teacher__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image03.png" alt="井木恵" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <div class="p-teacher__card">
             <div class="p-teacher__role">teacher</div>
             <h3 class="p-teacher__name">ジョンソン愛梨</h3>
-            <img src="https://placehold.jp/380x340.png" alt="ジョンソン愛梨" class="p-teacher__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image04.png" alt="ジョンソン愛梨" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
           </div>
 
@@ -211,14 +289,14 @@
           <div class="p-teacher__card advisor">
             <div class="p-teacher__role">advisor</div>
             <h3 class="p-teacher__name">井上佳那子</h3>
-            <img src="https://placehold.jp/380x340.png" alt="井上佳那子" class="p-teacher__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image05.png" alt="井上佳那子" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <div class="p-teacher__card advisor">
             <div class="p-teacher__role">advisor</div>
             <h3 class="p-teacher__name">北村明日人</h3>
-            <img src="https://placehold.jp/380x340.png" alt="北村明日人" class="p-teacher__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image06.png" alt="北村明日人" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
           </div>
 
@@ -234,6 +312,15 @@
           <h2 class="p-access__title main-title">
             <span>アクセス</span>
           </h2>
+
+          <div class="title-icon-group">
+            <div class="shape" data-shape="circle" data-color="gray"></div>
+            <div class="shape" data-shape="circle" data-color="pink"></div>
+            <div class="shape" data-shape="triangle" data-color="blue"></div>
+            <div class="shape" data-shape="triangle" data-color="green"></div>
+            <div class="shape" data-shape="square" data-color="yellow"></div>
+            <div class="shape" data-shape="square" data-color="yellow" data-number="2"></div>
+          </div>
         </div>
 
         <div class="p-access__wrap">
@@ -267,6 +354,19 @@
           <h2 class="p-contact__title main-title">
             <span>お申し込み お問い合わせ</span>
           </h2>
+
+          <div class="title-icon-group">
+            <div class="left">
+              <div class="shape" data-shape="circle" data-color="gray"></div>
+              <div class="shape" data-shape="triangle" data-color="blue"></div>
+              <div class="shape" data-shape="square" data-color="yellow" data-number="2"></div>
+            </div>
+            <div class="right">
+              <div class="shape" data-shape="circle" data-color="pink"></div>
+              <div class="shape" data-shape="triangle" data-color="green"></div>
+              <div class="shape" data-shape="square" data-color="yellow"></div>
+            </div>
+          </div>
         </div>
         <div class="p-contact__detail">
           <p>
@@ -288,7 +388,7 @@
               </dd>
             </dl>
             <dl class="p-contact__form-wrap">
-            <dt class="p-contact__form-label"><span class="p-contact__label-optional"></span></dt>
+              <dt class="p-contact__form-label"><span class="p-contact__label-optional"></span></dt>
               <dd class="p-contact__form-input">
                 <label><input type="radio" name="inquiry-type" value="見学希望"> 見学希望</label>
                 <label><input type="radio" name="inquiry-type" value="入会希望"> 入会希望</label>
