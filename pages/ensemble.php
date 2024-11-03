@@ -169,8 +169,8 @@
     </section>
 
     <!-- teacher -->
-    <section class="p-teacher l-teacher  " id="">
-      <div class="p-teacher__inner inner">
+    <section class="p-teacher l-teacher" id="">
+      <div class="p-teacher__inner">
         <div class="p-teacher__title-wrap">
           <h2 class="p-teacher__title main-title">
             <span>講師</span>
@@ -208,14 +208,14 @@
           </div>
 
           <!-- Advisor Cards -->
-          <div class="p-teacher__card">
+          <div class="p-teacher__card advisor">
             <div class="p-teacher__role">advisor</div>
             <h3 class="p-teacher__name">井上佳那子</h3>
             <img src="https://placehold.jp/380x340.png" alt="井上佳那子" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
           </div>
 
-          <div class="p-teacher__card">
+          <div class="p-teacher__card advisor">
             <div class="p-teacher__role">advisor</div>
             <h3 class="p-teacher__name">北村明日人</h3>
             <img src="https://placehold.jp/380x340.png" alt="北村明日人" class="p-teacher__image">
@@ -239,7 +239,7 @@
         <div class="p-access__wrap">
           <!-- 開催場所 -->
           <div class="p-access__location">
-            <p>開催場所：結城ホール（ラポルテの西館一階）</p>
+            <p>開催場所 結城ホール（ラポルテの西館一階）</p>
           </div>
 
           <!-- 地図表示 -->
@@ -262,7 +262,7 @@
 
     <!-- contact -->
     <section class="p-contact l-contact  " id="">
-      <div class="p-contact__inner inner">
+      <div class="p-contact__inner">
         <div class="p-contact__title-wrap">
           <h2 class="p-contact__title main-title">
             <span>お申し込み お問い合わせ</span>
@@ -281,46 +281,47 @@
           <!-- お問い合わせフォーム -->
           <form class="p-contact__form" action="">
             <dl class="p-contact__form-wrap">
-              <dt class="p-contact__form-label">お問い合わせのコース<span class="p-contact__label-optional">任意</span></dt>
+              <dt class="p-contact__form-label">お問い合わせのコース<span class="p-contact__label-optional"></span></dt>
               <dd class="p-contact__form-input">
                 <label><input type="radio" name="course" value="ひばりっ子音楽隊"> ひばりっ子音楽隊</label>
                 <label><input type="radio" name="course" value="ひばり弦楽アンサンブル"> ひばり弦楽アンサンブル</label>
               </dd>
             </dl>
             <dl class="p-contact__form-wrap">
+            <dt class="p-contact__form-label"><span class="p-contact__label-optional"></span></dt>
               <dd class="p-contact__form-input">
                 <label><input type="radio" name="inquiry-type" value="見学希望"> 見学希望</label>
                 <label><input type="radio" name="inquiry-type" value="入会希望"> 入会希望</label>
               </dd>
             </dl>
             <dl class="p-contact__form-wrap">
-              <dt class="p-contact__form-label">お名前<span class="p-contact__label-required">必須</span></dt>
+              <dt class="p-contact__form-label">お名前<span class="p-contact__label-required"></span></dt>
               <dd class="p-contact__form-input">
                 <input type="text" name="name" placeholder="山田 太郎" required>
               </dd>
             </dl>
             <dl class="p-contact__form-wrap">
-              <dt class="p-contact__form-label">フリガナ<span class="p-contact__label-required">必須</span></dt>
+              <dt class="p-contact__form-label">フリガナ<span class="p-contact__label-required"></span></dt>
               <dd class="p-contact__form-input">
                 <input type="text" name="furigana" placeholder="ヤマダ タロウ" required>
               </dd>
             </dl>
             <dl class="p-contact__form-wrap">
-              <dt class="p-contact__form-label">メールアドレス<span class="p-contact__label-required">必須</span></dt>
+              <dt class="p-contact__form-label">メールアドレス<span class="p-contact__label-required"></span></dt>
               <dd class="p-contact__form-input">
                 <input type="email" name="email" placeholder="sample@sample.com" required>
               </dd>
             </dl>
 
             <dl class="p-contact__form-wrap">
-              <dt class="p-contact__form-label">電話番号<span class="p-contact__label-optional">任意</span></dt>
+              <dt class="p-contact__form-label">電話番号<span class="p-contact__label-optional"></span></dt>
               <dd class="p-contact__form-input">
                 <input type="tel" name="phone" placeholder="090-1234-5678">
               </dd>
             </dl>
 
             <dl class="p-contact__form-wrap p-contact__form-wrap--textarea">
-              <dt class="p-contact__form-label">お問い合わせ内容<span class="p-contact__label-optional">任意</span></dt>
+              <dt class="p-contact__form-label">お問い合わせ内容<span class="p-contact__label-optional"></span></dt>
               <dd class="p-contact__form-textarea">
                 <textarea name="message" placeholder="ここにお問い合わせ内容をご記入ください。"></textarea>
               </dd>

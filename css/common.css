@@ -740,6 +740,7 @@ nav .inner ul li a {
 /* ピンク系の色 */
 /* グリーン系の色 */
 /* 白色 */
+/* 黄色 */
 .en-wrap {
   padding: 210px 0 80px 0;
 }
@@ -888,6 +889,10 @@ nav .inner ul li a {
   background-color: #faf2e8;
 }
 
+.l-work {
+  margin-bottom: 180px;
+}
+
 .p-work__inner {
   max-width: 880px;
   margin: 0 auto;
@@ -983,7 +988,7 @@ nav .inner ul li a {
   bottom: -50px;
 }
 
-.p-work__class-container > .p-work__class-wrap:first-of-type {
+.p-work__wrap > .p-work__class-wrap:nth-child(2) {
   margin-bottom: 180px;
 }
 
@@ -1124,4 +1129,442 @@ nav .inner ul li a {
 .p-work__images {
   background-color: #fae7db; /* 背景色を薄いベージュに設定 */
   padding: 10px 0;
+}
+
+/*===================================
+ * teacher
+===================================*/
+/* 全体のセクション */
+.p-teacher {
+  padding: 40px 0;
+  background-color: #faf2e8; /* 背景色 */
+  text-align: center;
+}
+
+.l-teacher {
+  margin-bottom: 180px;
+}
+
+/* タイトルのスタイル */
+.p-teacher__title-wrap {
+  margin-bottom: 170px;
+}
+
+.p-teacher__title {
+  font-size: 44px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.p-teacher__title span {
+  position: relative;
+}
+
+.p-teacher__title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #333;
+  margin: 10px auto 0;
+}
+
+/* 講師カードのレイアウト */
+.p-teacher__wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.p-teacher__card {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.p-teacher__card.advisor {
+  background-color: #fdebcc;
+}
+
+.p-teacher__card:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 上部の丸いアイコン */
+.p-teacher__card::before {
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-color: #63b68f;
+  border-radius: 50%;
+  position: absolute;
+  top: -22.5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.p-teacher__card::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* 役職のスタイル */
+.p-teacher__role {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* 名前のスタイル */
+.p-teacher__name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* 画像のスタイル */
+.p-teacher__image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* ボタンのスタイル */
+.p-teacher__button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #63b68f;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.p-teacher__button:hover {
+  background-color: #63b68f;
+}
+
+@media (max-width: 900px) {
+  .p-teacher__wrap {
+    grid-template-columns: repeat(2, 1fr); /* 画面幅が狭いときは2列 */
+  }
+}
+@media (max-width: 600px) {
+  .p-teacher__wrap {
+    grid-template-columns: 1fr; /* モバイルでは1列表示 */
+  }
+}
+/*===================================
+ * access
+===================================*/
+/* アクセスセクション全体 */
+.p-access {
+  padding: 60px 0;
+  background-color: #faf2e8;
+  text-align: center;
+}
+
+.l-access {
+  margin-bottom: 130px;
+}
+
+/* タイトルのスタイル */
+.p-access__title-wrap {
+  margin-bottom: 40px;
+}
+
+.p-access__title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.p-access__title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #333;
+  margin: 10px auto 0;
+}
+
+/* 開催場所のスタイル */
+.p-access__location p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* 地図表示部分 */
+.p-access__map {
+  position: relative;
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  width: 100%;
+  height: 510px;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.p-access__map-inner {
+  font-size: 16px;
+  color: #d73b6b;
+}
+
+/* Google Maps リンク */
+.p-access__map-link {
+  position: absolute;
+  bottom: -40px;
+  right: 15px;
+  text-align: right;
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+
+.p-access__map-link:hover {
+  text-decoration: underline;
+}
+
+/* 住所情報のスタイル */
+.p-access__address {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/*===================================
+ * contact
+===================================*/
+/* お問い合わせセクション全体 */
+.p-contact {
+  padding: 60px 0;
+  background-color: #faf2e8;
+}
+
+.p-contact__inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* タイトルのスタイル */
+.p-contact__title-wrap {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.p-contact__title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.p-contact__title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #333;
+  margin: 10px auto;
+}
+
+/* 説明テキスト */
+.p-contact__detail {
+  text-align: center;
+}
+
+.p-contact__detail p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* フォーム全体 */
+.p-contact__form {
+  width: 100%;
+}
+
+.p-contact__form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.p-contact__form > .p-contact__form-wrap:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+
+.p-contact__form-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 100%;
+  max-width: 330px;
+  position: relative;
+}
+
+.p-contact__label-optional,
+.p-contact__label-required {
+  font-size: 12px;
+  color: #666;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+.p-contact__label-required::before {
+  content: "必須";
+  color: #d73b6b;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.p-contact__label-optional::before {
+  content: "任意";
+  position: absolute;
+  right: 100px;
+  color: #666;
+  margin-right: 5px;
+}
+
+/* 各入力フィールド */
+.p-contact__form-input,
+.p-contact__form-textarea {
+  width: 100%;
+}
+
+.p-contact__form-input input[type=text],
+.p-contact__form-input input[type=email],
+.p-contact__form-input input[type=tel],
+.p-contact__form-textarea textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.p-contact__form-textarea textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* ラジオボタン */
+.p-contact__form-input label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+}
+
+.p-contact__form-input input[type=radio] {
+  margin-right: 8px;
+  accent-color: #666; /* ボタンの色設定 */
+}
+
+/* 送信ボタン */
+.p-contact__form-submit {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.p-contact__submit-button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.p-contact__submit-button:hover {
+  background-color: #555;
+}
+
+/* ボタン背景装飾 */
+.p-contact__form-submit-bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #333;
+  border-radius: 25px;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
 }
