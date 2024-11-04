@@ -43,7 +43,7 @@
             <span>合奏倶楽部です</span>
           </h2>
         </header>
-        <div class="p-hero__wrap">
+        <div class="p-hero__wrap lFixedBg">
           <!-- 左側の画像グループ -->
           <div class="p-hero__images-group p-hero__images-group--left">
             <figure class="p-hero__image p-hero__image--left">
@@ -220,7 +220,7 @@
                   <h5 class="p-work__schedule-title">開催日時</h5>
                 </div>
                 <p class="p-work__schedule-description">
-                  月1回 基本的に日曜日 13:00〜14:30
+                  月1回 <br class="is-sp">基本的に日曜日 <br class="is-sp">13:00〜14:30
                 </p>
               </div>
               <!-- 価格 -->
@@ -243,7 +243,7 @@
           <div class="p-work__class-wrap">
             <!-- ひばりジュニア弦楽アンサンブルの詳細情報 -->
             <div class="p-work__details">
-              <h4 class="p-work__details-title green">ひばりジュニア弦楽アンサンブル</h4>
+              <h4 class="p-work__details-title green">ひばりジュニア<br class="is-sp">弦楽アンサンブル</h4>
               <p class="p-work__details-description">
                 一定レベル（講師判断）をクリアした、小学生〜大学生の弦楽合奏団！イベントに向けて専門的な楽曲に取り組んでいきます。今年度はクリスマスコンサートに向けてコレルリ作曲 合奏協奏曲第8番ト短調「クリスマス協奏曲」を行う予定です♪ ※楽章未定
               </p>
@@ -262,7 +262,7 @@
                   <h5 class="p-work__schedule-title green">開催日時</h5>
                 </div>
                 <p class="p-work__schedule-description">
-                  月1回 基本的に日曜日 14:30〜16:00
+                  月1回 <br class="is-sp">基本的に日曜日 <br class="is-sp">14:30〜16:00
                 </p>
               </div>
               <!-- 価格 -->
@@ -436,7 +436,7 @@
       <div class="p-contact__inner">
         <div class="p-contact__title-wrap">
           <h2 class="p-contact__title main-title">
-            <span>お申し込み お問い合わせ</span>
+            <span>お申し込み <br class="is-sp">お問い合わせ</span>
           </h2>
 
           <div class="title-icon-group">
@@ -527,37 +527,5 @@
 
 
 
-  <style>
-    .wave-container {
-      position: absolute;
-      width: 100%;
-      height: 300px;
-      overflow: hidden;
-      left: 0;
-      top: 40%;
-    }
 
-    .wave-container__item2 {
-      position: absolute;
-      width: 100%;
-      height: 300px;
-      overflow: hidden;
-      left: 0;
-      top: 230%;
-    }
-
-    .wave-container__item3 {
-      position: absolute;
-      width: 100%;
-      height: 300px;
-      overflow: hidden;
-      left: 0;
-      top: 340%;
-    }
-
-    .wave {
-      width: 100%;
-      height: 100%;
-    }
-  </style>
 </div>

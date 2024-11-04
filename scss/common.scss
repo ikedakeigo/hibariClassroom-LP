@@ -750,12 +750,31 @@ $yellow-color: #fdebcc; /* 黄色 */
 $body-color-bg: #fff8eb; /* 背景色 */
 
 /*===================================
- * font-family
+ * pc sp
+===================================*/
+.is-pc {
+  display: none;
+  @include option.pc {
+    display: block;
+  }
+}
+
+.is-sp {
+  display: none;
+  @include option.tab {
+    display: block;
+  }
+}
+
+/*===================================
+ *
 ===================================*/
 
 .en-wrap {
   // background-color: $white-color;
   background-color: $body-color-bg;
+  overflow: hidden;
+  overflow-x: hidden;
   p,
   h2,
   h3,
@@ -768,9 +787,15 @@ $body-color-bg: #fff8eb; /* 背景色 */
   }
 
   padding: 210px 0 80px 0;
+
+  @include option.sp {
+    padding: 110px 0 80px 0;
+  }
+
   @include option.sp {
     padding: 170px 0 80px 0;
   }
+
   .inner {
     max-width: 1250px;
     margin: 0 auto;
@@ -791,6 +816,19 @@ $body-color-bg: #fff8eb; /* 背景色 */
       height: 33px;
       top: 60%;
       left: 25%;
+
+      @include option.tab {
+        left: 15%;
+        width: 23px;
+        height: 23px;
+      }
+
+      @include option.sp {
+        top: 85%;
+        left: 10%;
+        width: 20px;
+        height: 20px;
+      }
     }
 
     .shape[data-shape="circle"][data-color="pink"] {
@@ -799,6 +837,18 @@ $body-color-bg: #fff8eb; /* 背景色 */
       bottom: -40%;
       width: 36px;
       height: 36px;
+
+      @include option.tab {
+        right: 8%;
+        width: 26px;
+        height: 26px;
+      }
+
+      @include option.sp {
+        right: 2%;
+        width: 20px;
+        height: 20px;
+      }
     }
 
     .shape[data-shape="triangle"][data-color="blue"] {
@@ -807,6 +857,18 @@ $body-color-bg: #fff8eb; /* 背景色 */
       height: 37px;
       bottom: -40%;
       left: 18%;
+
+      @include option.tab {
+        left: 8%;
+        width: 27px;
+        height: 27px;
+      }
+
+      @include option.sp {
+        left: 2%;
+        width: 20px;
+        height: 20px;
+      }
     }
 
     .shape[data-shape="triangle"][data-color="green"] {
@@ -815,18 +877,48 @@ $body-color-bg: #fff8eb; /* 背景色 */
       height: 30px;
       top: 60%;
       right: 12%;
+
+      @include option.tab {
+        right: 2%;
+        width: 20px;
+        height: 20px;
+      }
     }
 
     .shape[data-shape="square"][data-color="yellow"] {
       background-image: url($square-path_yellow);
       top: 50%;
       right: 25%;
+
+      @include option.tab {
+        right: 15%;
+        width: 40px;
+        height: 40px;
+      }
+
+      @include option.sp {
+        right: 10%;
+        width: 30px;
+        height: 30px;
+      }
     }
 
     .shape[data-shape="square"][data-color="yellow"][data-number="2"] {
       background-image: url($square-path_yellow);
       top: 50%;
       left: 10%;
+
+      @include option.tab {
+        left: 0;
+        width: 40px;
+        height: 40px;
+      }
+
+      @include option.sp {
+        left: 0;
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 
@@ -844,6 +936,16 @@ $body-color-bg: #fff8eb; /* 背景色 */
     background-repeat: no-repeat;
     width: 300px;
     height: 20px;
+
+    @include option.tab {
+      width: 200px;
+      bottom: -40px;
+    }
+
+    @include option.sp {
+      width: 150px;
+      bottom: -25px;
+    }
   }
 }
 
@@ -866,7 +968,13 @@ $body-color-bg: #fff8eb; /* 背景色 */
 }
 
 .bg-color__item1::before {
-  top: 64%;
+  top: 82%;
+  @include option.tab {
+    top: 67%;
+  }
+  @include option.sp {
+    top: 54%;
+  }
 }
 
 .bg-color__item2::before {
@@ -879,8 +987,14 @@ $body-color-bg: #fff8eb; /* 背景色 */
     rgb(250, 231, 219),
     rgb(255, 245, 240)
   );
-  top: 254%;
+  top: 312%;
   height: 150vh;
+  @include option.tab {
+    top: 320%;
+  }
+  @include option.sp {
+    top: 305%;
+  }
 }
 
 .bg-color__item4::before {
@@ -892,8 +1006,14 @@ $body-color-bg: #fff8eb; /* 背景色 */
     rgb(235, 240, 230),
     #ffffff
   );
-  top: 364%;
+  top: 448%;
   height: 88vh;
+  @include option.tab {
+    top: 460%;
+  }
+  @include option.sp {
+    top: 459%;
+  }
 }
 
 .bg-color__item5::before {
@@ -905,14 +1025,82 @@ $body-color-bg: #fff8eb; /* 背景色 */
     rgb(245, 248, 243)
   );
 
-  top: 445%;
+  top: 525%;
   height: 20vh;
+  @include option.tab {
+    top: 538%;
+  }
 }
 
 .bg-color__item6::before {
   background-color: $white-color;
   top: 0;
   height: 100vh;
+}
+
+/*===================================
+ * 波 背景
+===================================*/
+.wave-container {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  left: 0;
+  top: 52%;
+
+  @include option.tab {
+    height: 200px;
+    top: 47%;
+  }
+
+  @include option.sp {
+    height: 150px;
+    top: 39%;
+  }
+}
+
+.wave-container__item2 {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  left: 0;
+  top: 282%;
+
+  @include option.tab {
+    height: 200px;
+    top: 300%;
+  }
+
+  @include option.sp {
+    height: 150px;
+    top: 290%;
+  }
+}
+
+.wave-container__item3 {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  left: 0;
+  top: 418%;
+
+  @include option.tab {
+    height: 200px;
+    top: 440%;
+  }
+
+  @include option.sp {
+    height: 150px;
+    top: 444%;
+  }
+}
+
+.wave {
+  width: 100%;
+  height: 100%;
 }
 
 /*===================================
@@ -931,6 +1119,14 @@ $body-color-bg: #fff8eb; /* 背景色 */
   justify-content: center;
   align-items: center;
   height: 700px;
+
+  @include option.tab {
+    height: 500px;
+  }
+
+  @include option.sp {
+    height: 400px;
+  }
 }
 
 .p-hero__title-wrap {
@@ -943,6 +1139,18 @@ $body-color-bg: #fff8eb; /* 背景色 */
   font-size: 47px;
   line-height: 2;
   writing-mode: vertical-rl;
+  @include option.tab {
+    font-size: 30px;
+  }
+  @include option.sp {
+    font-size: 24px;
+  }
+}
+
+.p-hero__wrap {
+  @include option.tab {
+    display: none;
+  }
 }
 
 /* 画像グループ全体の配置調整 */
@@ -996,6 +1204,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
 .p-hero__image--left:nth-child(1) {
   transform: translateY(-30px);
   width: aspect(300, 150);
+  @include option.tab {
+    width: aspect(150, 75);
+  }
   img {
     aspect-ratio: 300/300;
     object-fit: cover;
@@ -1008,6 +1219,10 @@ $body-color-bg: #fff8eb; /* 背景色 */
   transform: translateX(-30%);
   width: 240px;
   height: aspect(240, 150);
+  @include option.tab {
+    width: 60%;
+    height: aspect(150, 75);
+  }
   img {
     aspect-ratio: 240/150;
     object-fit: cover;
@@ -1065,6 +1280,19 @@ $body-color-bg: #fff8eb; /* 背景色 */
     background-image: url($circle-path_blue);
     width: 54px;
     height: 54px;
+
+    @include option.tab {
+      right: 15%;
+      width: 44px;
+      height: 44px;
+    }
+
+    @include option.sp {
+      top: 20%;
+      right: 20%;
+      width: 24px;
+      height: 24px;
+    }
   }
 
   .shape[data-shape="circle"][data-color="green"] {
@@ -1073,6 +1301,17 @@ $body-color-bg: #fff8eb; /* 背景色 */
     bottom: 15%;
     width: 70px;
     height: 70px;
+
+    @include option.tab {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include option.sp {
+      // bottom: 30%;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   .shape[data-shape="circle"][data-color="pink"] {
@@ -1081,6 +1320,17 @@ $body-color-bg: #fff8eb; /* 背景色 */
     bottom: 35%;
     width: 46.6px;
     height: 46.6px;
+
+    @include option.tab {
+      width: 36px;
+      height: 36px;
+    }
+
+    @include option.sp {
+      bottom: 40%;
+      width: 16px;
+      height: 16px;
+    }
   }
 
   .shape[data-shape="triangle"][data-color="blue"] {
@@ -1088,6 +1338,18 @@ $body-color-bg: #fff8eb; /* 背景色 */
     width: 44.86px;
     height: 45.41px;
     left: 25%;
+
+    @include option.tab {
+      left: 5%;
+      width: 34px;
+      height: 35px;
+    }
+
+    @include option.sp {
+      left: 10%;
+      width: 14px;
+      height: 15px;
+    }
   }
 
   .shape[data-shape="triangle"][data-color="pink"] {
@@ -1096,12 +1358,40 @@ $body-color-bg: #fff8eb; /* 背景色 */
     height: 55.37px;
     right: 25%;
     bottom: 10%;
+
+    @include option.tab {
+      right: 10%;
+      bottom: 25%;
+      width: 45px;
+      height: 45px;
+    }
+
+    @include option.sp {
+      bottom: 10%;
+      // right: 5%;
+      bottom: 35%;
+      width: 25px;
+      height: 25px;
+    }
   }
 
   .shape[data-shape="square"][data-color="green"] {
     background-image: url($square-path_green);
     right: -10%;
     top: 31%;
+
+    @include option.tab {
+      right: 10%;
+      width: 40px;
+      height: 40px;
+    }
+
+    @include option.sp {
+      top: 41%;
+      right: 5%;
+      width: 20px;
+      height: 20px;
+    }
   }
 
   .shape[data-shape="square"][data-color="yellow"] {
@@ -1110,6 +1400,18 @@ $body-color-bg: #fff8eb; /* 背景色 */
     height: 66.52px;
     left: 30%;
     top: 20%;
+
+    @include option.tab {
+      top: 15%;
+      width: 56px;
+      height: 56px;
+    }
+
+    @include option.sp {
+      // top: 30%;
+      width: 36px;
+      height: 36px;
+    }
   }
 
   .shape[data-shape="note"] {
@@ -1117,12 +1419,37 @@ $body-color-bg: #fff8eb; /* 背景色 */
     right: 30%;
     width: 38.57px;
     height: 70.13px;
+
+    @include option.tab {
+      right: 10%;
+      width: 28px;
+      height: 60px;
+    }
+
+    @include option.sp {
+      right: 5%;
+      width: 8px;
+      height: 40px;
+    }
   }
 
   .shape[data-shape="note"][data-number="2"] {
     background-image: url($note-path);
     left: -5%;
     top: 30%;
+
+    @include option.tab {
+      left: 10%;
+      width: 40px;
+      height: 40px;
+    }
+
+    @include option.sp {
+      top: 40%;
+      left: 5%;
+      width: 20px;
+      height: 20px;
+    }
   }
 
   .shape[data-shape="line"][data-color="blue"] {
@@ -1131,13 +1458,41 @@ $body-color-bg: #fff8eb; /* 背景色 */
     right: 32%;
     width: 68px;
     height: 55px;
+
+    @include option.tab {
+      right: 15%;
+      width: 58px;
+      height: 45px;
+    }
+
+    @include option.sp {
+      top: 33%;
+      right: 10%;
+      width: 38px;
+      height: 25px;
+    }
   }
+
   .shape[data-shape="line"][data-color="pink"] {
     background-image: url($line-path_pink);
     left: 30%;
     bottom: 30%;
     width: 68px;
     height: 55px;
+
+    @include option.tab {
+      left: 10%;
+      bottom: 20%;
+      width: 38px;
+      height: 45px;
+    }
+
+    @include option.sp {
+      left: 5%;
+      bottom: 30%;
+      width: 38px;
+      height: 25px;
+    }
   }
 }
 
@@ -1179,12 +1534,29 @@ $body-color-bg: #fff8eb; /* 背景色 */
     height: 24px;
     top: -23%;
     right: 38%;
+    @include option.tab {
+      top: -13%;
+      right: 28%;
+    }
+    @include option.sp {
+      width: 14px;
+      height: 14px;
+    }
   }
 
   .shape[data-shape="circle"][data-color="green"] {
     background-image: url($circle-path_green);
     top: -20%;
     right: 43%;
+    @include option.tab {
+      top: -10%;
+      right: 33%;
+    }
+    @include option.sp {
+      right: 27%;
+      width: 30px;
+      height: 30px;
+    }
   }
 
   .shape[data-shape="circle"][data-color="pink"] {
@@ -1193,6 +1565,15 @@ $body-color-bg: #fff8eb; /* 背景色 */
     left: 25%;
     width: 36px;
     height: 36px;
+    @include option.tab {
+      top: -10%;
+      left: 26%;
+    }
+    @include option.sp {
+      width: 26px;
+      height: 26px;
+      left: 5%;
+    }
   }
 
   .shape[data-shape="triangle"][data-color="blue"] {
@@ -1201,6 +1582,15 @@ $body-color-bg: #fff8eb; /* 背景色 */
     height: 37px;
     top: -24%;
     left: 32%;
+    @include option.tab {
+      top: -14%;
+      left: 34%;
+    }
+    @include option.sp {
+      width: 27px;
+      height: 27px;
+      left: 20%;
+    }
   }
 
   .shape[data-shape="triangle"][data-color="pink"] {
@@ -1209,18 +1599,44 @@ $body-color-bg: #fff8eb; /* 背景色 */
     height: 30px;
     top: -15%;
     left: 40%;
+    @include option.tab {
+      top: -7%;
+      left: 40%;
+    }
+    @include option.sp {
+      width: 20px;
+      height: 20px;
+      left: 30%;
+    }
   }
 
   .shape[data-shape="square"][data-color="green"] {
     background-image: url($square-path_green);
     top: -20%;
     right: 28%;
+    @include option.tab {
+      top: -10%;
+      right: 18%;
+    }
+    @include option.sp {
+      width: 40px;
+      height: 40px;
+      right: 5%;
+    }
   }
 
   .shape[data-shape="square"][data-color="yellow"] {
     background-image: url($square-path_yellow);
     top: -28%;
     right: 50%;
+    @include option.tab {
+      top: -13%;
+      right: 45%;
+    }
+    @include option.sp {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   .shape[data-shape="note"] {
@@ -1229,12 +1645,28 @@ $body-color-bg: #fff8eb; /* 背景色 */
     height: 70.13px;
     top: -20%;
     right: 30%;
+    @include option.tab {
+      top: -10%;
+      right: 20%;
+    }
+    @include option.sp {
+      width: 28px;
+      height: 60px;
+    }
   }
 
   .shape[data-shape="note"][data-number="2"] {
     background-image: url($note-path);
     top: -20%;
     left: -5%;
+    @include option.tab {
+      top: -10%;
+      left: -15%;
+    }
+    @include option.sp {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   .shape[data-shape="line"][data-color="blue"] {
@@ -1243,13 +1675,30 @@ $body-color-bg: #fff8eb; /* 背景色 */
     right: 32%;
     width: 68px;
     height: 55px;
+    @include option.tab {
+      top: -10%;
+      right: 22%;
+    }
+    @include option.sp {
+      width: 58px;
+      height: 45px;
+    }
   }
+
   .shape[data-shape="line"][data-color="pink"] {
     background-image: url($line-path_pink);
     top: -20%;
     left: 30%;
     width: 68px;
     height: 55px;
+    @include option.tab {
+      top: -10%;
+      left: 20%;
+    }
+    @include option.sp {
+      width: 58px;
+      height: 45px;
+    }
   }
 }
 
@@ -1268,16 +1717,26 @@ $body-color-bg: #fff8eb; /* 背景色 */
   align-items: flex-start;
   flex-direction: row-reverse;
   text-align: start;
+  @include option.tab {
+    display: grid;
+    justify-content: center;
+  }
 }
 
 /* タイトルの縦書きスタイル */
 .p-about__title {
   writing-mode: vertical-rl; /* 縦書きにする */
-  font-size: 41px;
+  font-size: clamp(20px, 5vw, 40px);
   line-height: 1.8;
   font-weight: bold;
   color: #333;
   margin-left: 20px;
+
+  @include option.tab {
+    margin-left: 0;
+    margin-bottom: 20px;
+    line-height: 3;
+  }
 
   .first {
     font-size: 20px;
@@ -1287,9 +1746,16 @@ $body-color-bg: #fff8eb; /* 背景色 */
 /* サブタイトルの縦書きスタイル */
 .p-about__sub-title {
   writing-mode: vertical-rl;
-  font-size: 20px;
+  font-size: clamp(16px, 5vw, 20px);
   line-height: 2.5;
   color: #666;
+  @include option.tab {
+    line-height: 3;
+    margin: 0 auto;
+  }
+  @include option.sp {
+    line-height: 2;
+  }
 }
 
 /* アイコンやイラストの配置 */
@@ -1297,11 +1763,17 @@ $body-color-bg: #fff8eb; /* 背景色 */
 .p-about__image-item02 {
   position: absolute;
   bottom: 20%;
+  @include option.tab {
+    bottom: -10%;
+  }
 }
 
 .p-about__image-item01 {
   width: 112px;
   left: 10%;
+  @include option.tab {
+    width: 92px;
+  }
   img {
     aspect-ratio: 112/176;
     object-fit: cover;
@@ -1312,6 +1784,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
 .p-about__image-item02 {
   width: 113px;
   right: 10%;
+  @include option.tab {
+    width: 93px;
+  }
   img {
     aspect-ratio: 113/150;
     object-fit: cover;
@@ -1331,6 +1806,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
 .l-work {
   margin-bottom: 180px;
+  @include option.tab {
+    margin-bottom: 0;
+  }
 }
 
 .p-work__inner {
@@ -1342,16 +1820,19 @@ $body-color-bg: #fff8eb; /* 背景色 */
 .p-work__title-wrap {
   text-align: center;
   margin-bottom: 90px;
+  @include option.tab {
+    margin-bottom: 30px;
+  }
 }
 
 .p-work__sub-title {
-  font-size: 21px;
+  font-size: clamp(14px, 5vw, 21px);
   color: #333;
   margin-bottom: 20px;
 }
 
 .p-work__title {
-  font-size: 52px;
+  font-size: clamp(24px, 5vw, 52px);
   font-weight: bold;
   color: #333;
   position: relative;
@@ -1365,6 +1846,11 @@ $body-color-bg: #fff8eb; /* 背景色 */
   gap: 20px;
   margin-top: 30px;
   margin-bottom: 130px;
+  @include option.tab {
+    gap: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .p-work__class-item {
@@ -1375,6 +1861,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
   text-align: center;
   position: relative;
   width: 50%;
+  @include option.tab {
+    width: 80%;
+  }
 }
 
 .p-work__class-item:nth-child(2) {
@@ -1419,6 +1908,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
   bottom: -50px;
 }
 
+.p-work__class-wrap {
+}
+
 .p-work__wrap > .p-work__class-wrap:nth-child(2) {
   margin-bottom: 180px;
 }
@@ -1441,8 +1933,15 @@ $body-color-bg: #fff8eb; /* 背景色 */
   text-align: center;
   margin-bottom: 30px;
 
+  @include option.tab {
+    font-size: 32px;
+  }
+
   &.green {
     background-color: $green-color;
+    @include option.tab {
+      line-height: 1.3;
+    }
   }
 }
 
@@ -1496,7 +1995,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
 .p-work__practice-title,
 .p-work__schedule-title,
 .p-work__price-title {
-  font-size: 28px;
+  font-size: clamp(16px, 5vw, 28px);
   font-weight: bold;
   color: $pink-color;
 
@@ -1516,7 +2015,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
 .p-work__schedule-description,
 .p-work__price-description {
-  font-size: 30px;
+  font-size: clamp(18px, 5vw, 30px);
   text-align: center;
 }
 
@@ -1574,6 +2073,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
 .l-teacher {
   margin-bottom: 180px;
+  @include option.tab {
+    margin-bottom: 20px;
+  }
 }
 
 .p-teacher__inner {
@@ -1584,10 +2086,18 @@ $body-color-bg: #fff8eb; /* 背景色 */
   max-width: 880px;
   margin: 0 auto;
   margin-bottom: 90px;
+
+  @include option.tab {
+    margin-bottom: 30px;
+  }
+
+  @include option.sp {
+    margin-bottom: 10px;
+  }
 }
 
 .p-teacher__title {
-  font-size: 44px;
+  font-size: clamp(24px, 5vw, 44px);
   font-weight: bold;
   color: #333;
   display: inline-block;
@@ -1620,6 +2130,10 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
   &.advisor {
     background-color: $yellow-color;
+  }
+
+  @include option.sp {
+    width: auto;
   }
 }
 
@@ -1715,10 +2229,16 @@ $body-color-bg: #fff8eb; /* 背景色 */
 .p-access {
   padding: 60px 0;
   text-align: center;
+  @include option.tab {
+    padding: 30px 0;
+  }
 }
 
 .l-access {
   margin-bottom: 130px;
+  @include option.tab {
+    margin-bottom: 20px;
+  }
 }
 
 /* タイトルのスタイル */
@@ -1729,7 +2249,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
 }
 
 .p-access__title {
-  font-size: 28px;
+  font-size: clamp(24px, 5vw, 28px);
   font-weight: bold;
   color: #333;
   position: relative;
@@ -1784,6 +2304,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
   color: #333;
   line-height: 1.8;
   text-align: left;
+  @include option.tab {
+    margin-top: 50px;
+  }
 }
 
 /*===================================
@@ -1804,10 +2327,14 @@ $body-color-bg: #fff8eb; /* 背景色 */
 .p-contact__title-wrap {
   text-align: center;
   margin-bottom: 20px;
+
+  @include option.tab {
+    margin-bottom: 0;
+  }
 }
 
 .p-contact__title {
-  font-size: 28px;
+  font-size: clamp(24px, 5vw, 28px);
   font-weight: bold;
   color: #333;
 }
@@ -1816,6 +2343,10 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
 .p-contact__detail {
   text-align: center;
+
+  @include option.tab {
+    text-align: left;
+  }
 }
 .p-contact__detail p {
   font-size: 14px;
@@ -1832,6 +2363,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
 .p-contact__form-wrap {
   display: flex;
   position: relative;
+  @include option.tab {
+    flex-direction: column;
+  }
 }
 .p-contact__form-wrap.course {
   .p-contact__form-label {
@@ -1839,6 +2373,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
   }
   .p-contact__label-optional::before {
     right: 33px;
+    @include option.tab {
+      bottom: -40px;
+    }
   }
 }
 
@@ -1861,14 +2398,24 @@ $body-color-bg: #fff8eb; /* 背景色 */
   width: 100%;
   max-width: 220px;
   position: relative;
+  @include option.tab {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .p-contact__form-wrap--textarea > .p-contact__form-label {
   align-items: flex-start;
 
   .p-contact__label-optional::before {
-    right: inherit;
-    top: 30px;
+    @include option.pc {
+      right: inherit;
+      top: 30px;
+    }
+    @include option.tab {
+      right: 25px;
+      top: 0;
+    }
   }
 }
 
@@ -1886,6 +2433,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
   padding: 0 10px;
   border-radius: 10px;
   right: 10px;
+  @include option.tab {
+    right: 25px;
+  }
 }
 
 .p-contact__label-required::before {
@@ -1958,6 +2508,10 @@ $body-color-bg: #fff8eb; /* 背景色 */
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
+  @include option.tab {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .p-contact__submit-button:hover {
