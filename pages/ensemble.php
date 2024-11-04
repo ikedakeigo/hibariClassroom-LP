@@ -1,5 +1,38 @@
+<script>
+  (function(d) {
+    var config = {
+        kitId: 'dpn5pbx',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h = d.documentElement,
+      t = setTimeout(function() {
+        h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+      }, config.scriptTimeout),
+      tk = d.createElement("script"),
+      f = false,
+      s = d.getElementsByTagName("script")[0],
+      a;
+    h.className += " wf-loading";
+    tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+    tk.async = true;
+    tk.onload = tk.onreadystatechange = function() {
+      a = this.readyState;
+      if (f || a && a != "complete" && a != "loaded") return;
+      f = true;
+      clearTimeout(t);
+      try {
+        Typekit.load(config)
+      } catch (e) {}
+    };
+    s.parentNode.insertBefore(tk, s)
+  })(document);
+</script>
+
 <div class="en-wrap fade load-anim">
   <div class="inner">
+
+    <div class="bg-color__item6"></div>
     <!-- hero -->
     <section class="p-hero l-hero" id="hero">
       <div class="p-hero__inner inner">
@@ -51,6 +84,21 @@
 
       </div>
     </section>
+
+    <div class="wave-container">
+      <svg
+        class="wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none">
+        <path
+          fill="#fef8e7"
+          fill-opacity="1"
+          d="M0,0 C300,0 900,320 1440,240 L1440,320 L0,320 Z"></path>
+      </svg>
+    </div>
+
+    <div class="bg-color__item1"></div>
 
     <!-- scroll-image -->
     <section class="p-scroll-image l-scroll-image" id="">
@@ -112,13 +160,15 @@
       </div>
     </section>
 
+    <div class="bg-color__item2"></div>
+
     <!-- work -->
     <section class="p-work l-work" id="">
       <div class="p-work__inner">
         <div class="p-work__title-wrap">
-          <p class="p-work__sub-title sub-title">
+          <h4 class="p-work__sub-title sub-title">
             ひばり合奏倶楽部の
-          </p>
+          </h4>
           <h2 class="p-work__title main-title">
             <span>2つのクラス</span>
           </h2>
@@ -136,13 +186,13 @@
 
             <!-- ひばりっ子音楽隊 -->
             <div class="p-work__class-item pink">
-              <p class="p-work__class-description">小学生以下</p>
+              <h4 class="p-work__class-description">小学生以下</h4>
               <h3 class="p-work__class-title">ひばりっ子音楽隊</h3>
             </div>
 
             <!-- ひばりジュニア弦楽アンサンブル -->
             <div class="p-work__class-item green">
-              <p class="p-work__class-description">一定レベルをクリアした、小学生〜大学生</p>
+              <h4 class="p-work__class-description">一定レベルをクリアした、小学生〜大学生</h4>
               <h3 class="p-work__class-title">ひばりジュニア弦楽アンサンブル</h3>
             </div>
           </div>
@@ -225,16 +275,48 @@
             </div>
             <!-- 画像セクション -->
             <div class="p-work__images">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image05.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image06.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image07.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image08.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image05.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image06.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image07.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image08.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
             </div>
           </div>
         </div>
 
       </div>
     </section>
+
+    <!-- 波ピンク -->
+    <div class="wave-container__item2">
+      <svg
+        class="wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none">
+        <path
+          fill="#fae7db"
+          fill-opacity="1"
+          d="M0,0 C300,0 900,320 1440,240 L1440,320 L0,320 Z"></path>
+      </svg>
+    </div>
+
+    <div class="bg-color__item3"></div>
+
+    <!-- 波みどり -->
+    <div class="wave-container__item3">
+      <svg
+        class="wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none">
+        <path
+          fill="#A8D5A2"
+          fill-opacity="1"
+          d="M0,240 C540,320 1140,0 1440,0 L1440,320 L0,320 Z"></path>
+      </svg>
+    </div>
+
+    <div class="bg-color__item4"></div>
 
     <!-- teacher -->
     <section class="p-teacher l-teacher" id="">
@@ -258,28 +340,28 @@
 
           <!-- 講師カード -->
           <div class="p-teacher__card">
-            <div class="p-teacher__role">teacher</div>
+            <h4 class="p-teacher__role">teacher</h4>
             <h3 class="p-teacher__name">大熊勇希 部長</h3>
             <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image01.png" alt="大熊勇希 部長" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <div class="p-teacher__card">
-            <div class="p-teacher__role">teacher</div>
+            <h4 class="p-teacher__role">teacher</h4>
             <h3 class="p-teacher__name">山内睦大 副部長</h3>
             <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image02.png" alt="山内睦大 副部長" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <div class="p-teacher__card">
-            <div class="p-teacher__role">teacher</div>
+            <h4 class="p-teacher__role">teacher</h4>
             <h3 class="p-teacher__name">井木恵</h3>
             <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image03.png" alt="井木恵" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <div class="p-teacher__card">
-            <div class="p-teacher__role">teacher</div>
+            <h4 class="p-teacher__role">teacher</h4>
             <h3 class="p-teacher__name">ジョンソン愛梨</h3>
             <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image04.png" alt="ジョンソン愛梨" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
@@ -287,14 +369,14 @@
 
           <!-- Advisor Cards -->
           <div class="p-teacher__card advisor">
-            <div class="p-teacher__role">advisor</div>
+            <h4 class="p-teacher__role">advisor</h4>
             <h3 class="p-teacher__name">井上佳那子</h3>
             <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image05.png" alt="井上佳那子" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <div class="p-teacher__card advisor">
-            <div class="p-teacher__role">advisor</div>
+            <h4 class="p-teacher__role">advisor</h4>
             <h3 class="p-teacher__name">北村明日人</h3>
             <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image06.png" alt="北村明日人" class="p-teacher__image">
             <a href="#" class="p-teacher__button">詳しくは →</a>
@@ -305,8 +387,10 @@
       </div>
     </section>
 
+    <div class="bg-color__item5"></div>
+
     <!-- access -->
-    <section class="p-access l-access  " id="">
+    <section class="p-access l-access" id="">
       <div class="p-access__inner inner">
         <div class="p-access__title-wrap">
           <h2 class="p-access__title main-title">
@@ -380,14 +464,14 @@
 
           <!-- お問い合わせフォーム -->
           <form class="p-contact__form" action="">
-            <dl class="p-contact__form-wrap">
+            <dl class="p-contact__form-wrap course">
               <dt class="p-contact__form-label">お問い合わせのコース<span class="p-contact__label-optional"></span></dt>
               <dd class="p-contact__form-input">
                 <label><input type="radio" name="course" value="ひばりっ子音楽隊"> ひばりっ子音楽隊</label>
                 <label><input type="radio" name="course" value="ひばり弦楽アンサンブル"> ひばり弦楽アンサンブル</label>
               </dd>
             </dl>
-            <dl class="p-contact__form-wrap">
+            <dl class="p-contact__form-wrap course">
               <dt class="p-contact__form-label"><span class="p-contact__label-optional"></span></dt>
               <dd class="p-contact__form-input">
                 <label><input type="radio" name="inquiry-type" value="見学希望"> 見学希望</label>
@@ -420,7 +504,7 @@
               </dd>
             </dl>
 
-            <dl class="p-contact__form-wrap p-contact__form-wrap--textarea">
+            <dl class="p-contact__form-wrap p-contact__form-wrap--textarea is-last">
               <dt class="p-contact__form-label">お問い合わせ内容<span class="p-contact__label-optional"></span></dt>
               <dd class="p-contact__form-textarea">
                 <textarea name="message" placeholder="ここにお問い合わせ内容をご記入ください。"></textarea>
@@ -429,7 +513,6 @@
 
             <div class="p-contact__form-submit">
               <button type="submit" class="p-contact__submit-button">確認画面へ</button>
-              <div class="p-contact__form-submit-bg"></div>
             </div>
           </form>
         </div>
@@ -437,4 +520,44 @@
 
     </section>
   </div>
+
+
+
+
+
+
+
+  <style>
+    .wave-container {
+      position: absolute;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      left: 0;
+      top: 40%;
+    }
+
+    .wave-container__item2 {
+      position: absolute;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      left: 0;
+      top: 230%;
+    }
+
+    .wave-container__item3 {
+      position: absolute;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      left: 0;
+      top: 340%;
+    }
+
+    .wave {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </div>

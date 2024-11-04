@@ -747,8 +747,26 @@ $pink-color: #eca49d; /* ピンク系の色 */
 $green-color: #63b68f; /* グリーン系の色 */
 $white-color: #ffffff; /* 白色 */
 $yellow-color: #fdebcc; /* 黄色 */
+$body-color-bg: #fff8eb; /* 背景色 */
+
+/*===================================
+ * font-family
+===================================*/
 
 .en-wrap {
+  // background-color: $white-color;
+  background-color: $body-color-bg;
+  p,
+  h2,
+  h3,
+  h4,
+  h5,
+  a {
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
   padding: 210px 0 80px 0;
   @include option.sp {
     padding: 170px 0 80px 0;
@@ -760,7 +778,6 @@ $yellow-color: #fdebcc; /* 黄色 */
       max-width: 90%;
     }
   }
-
 
   .title-icon-group {
     height: 70px;
@@ -830,6 +847,74 @@ $yellow-color: #fdebcc; /* 黄色 */
   }
 }
 
+.bg-color__item1,
+.bg-color__item2,
+.bg-color__item3,
+.bg-color__item4,
+.bg-color__item5,
+.bg-color__item6 {
+  // position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $body-color-bg;
+  }
+}
+
+.bg-color__item1::before {
+  top: 64%;
+}
+
+.bg-color__item2::before {
+  top: 148%;
+}
+
+.bg-color__item3::before {
+  background: linear-gradient(
+    to bottom,
+    rgb(250, 231, 219),
+    rgb(255, 245, 240)
+  );
+  top: 254%;
+  height: 150vh;
+}
+
+.bg-color__item4::before {
+  background: linear-gradient(
+    to bottom,
+    rgb(168, 213, 162),
+    rgb(168, 220, 173),
+    rgb(168, 227, 183),
+    rgb(235, 240, 230),
+    #ffffff
+  );
+  top: 364%;
+  height: 88vh;
+}
+
+.bg-color__item5::before {
+  background: linear-gradient(
+    to top,
+    #fff8eb,
+    rgb(255, 248, 235),
+    rgb(255, 252, 245),
+    rgb(245, 248, 243)
+  );
+
+  top: 445%;
+  height: 20vh;
+}
+
+.bg-color__item6::before {
+  background-color: $white-color;
+  top: 0;
+  height: 100vh;
+}
+
 /*===================================
  * hero
 ===================================*/
@@ -838,6 +923,7 @@ $yellow-color: #fdebcc; /* 黄色 */
   padding: 50px 0;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .p-hero__inner {
@@ -1059,6 +1145,8 @@ $yellow-color: #fdebcc; /* 黄色 */
  * scroll-image
 ===================================*/
 .p-scroll-image {
+  position: relative;
+  z-index: 1;
 }
 
 .l-scroll-image {
@@ -1080,9 +1168,9 @@ $yellow-color: #fdebcc; /* 黄色 */
 /* Aboutセクション全体 */
 .p-about {
   padding: 60px 0;
-  background-color: #faf2e8;
   text-align: center;
   position: relative;
+  z-index: 1;
 
   /* 形状ごとのスタイル */
   .shape[data-shape="circle"][data-color="blue"] {
@@ -1237,7 +1325,8 @@ $yellow-color: #fdebcc; /* 黄色 */
 
 .p-work {
   padding: 60px 0;
-  background-color: #faf2e8;
+  position: relative;
+  z-index: 1;
 }
 
 .l-work {
@@ -1258,7 +1347,7 @@ $yellow-color: #fdebcc; /* 黄色 */
 .p-work__sub-title {
   font-size: 21px;
   color: #333;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .p-work__title {
@@ -1280,7 +1369,7 @@ $yellow-color: #fdebcc; /* 黄色 */
 
 .p-work__class-item {
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   background-color: $pink-color;
   border-radius: 20px;
   text-align: center;
@@ -1293,13 +1382,13 @@ $yellow-color: #fdebcc; /* 黄色 */
 }
 
 .p-work__class-description {
-  font-size: 20px;
+  font-size: 18px;
   color: $white-color;
   margin-bottom: 20px;
 }
 
 .p-work__class-title {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
   color: $white-color;
 }
@@ -1329,7 +1418,6 @@ $yellow-color: #fdebcc; /* 黄色 */
 .p-work__class-item::before {
   bottom: -50px;
 }
-
 
 .p-work__wrap > .p-work__class-wrap:nth-child(2) {
   margin-bottom: 180px;
@@ -1469,7 +1557,6 @@ $yellow-color: #fdebcc; /* 黄色 */
 
 /* コンテナ全体の背景色 */
 .p-work__images {
-  background-color: #fae7db; /* 背景色を薄いベージュに設定 */
   padding: 10px 0;
 }
 
@@ -1479,8 +1566,9 @@ $yellow-color: #fdebcc; /* 黄色 */
 
 /* 全体のセクション */
 .p-teacher {
+  position: relative;
+  z-index: 1;
   padding: 40px 0;
-  background-color: #faf2e8; /* 背景色 */
   text-align: center;
 }
 
@@ -1489,7 +1577,6 @@ $yellow-color: #fdebcc; /* 黄色 */
 }
 
 .p-teacher__inner {
-
 }
 
 /* タイトルのスタイル */
@@ -1522,6 +1609,8 @@ $yellow-color: #fdebcc; /* 黄色 */
   background-color: $white-color;
   border-radius: 15px;
   padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   position: relative;
@@ -1566,11 +1655,11 @@ $yellow-color: #fdebcc; /* 黄色 */
 
 /* 役職のスタイル */
 .p-teacher__role {
-  font-size: 23px;
+  font-size: 16px;
+  line-height: 1;
   color: #b3b3b3;
   margin-bottom: 8px;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 /* 名前のスタイル */
@@ -1587,7 +1676,7 @@ $yellow-color: #fdebcc; /* 黄色 */
   height: 340px;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   object-fit: cover;
 }
 
@@ -1625,7 +1714,6 @@ $yellow-color: #fdebcc; /* 黄色 */
 /* アクセスセクション全体 */
 .p-access {
   padding: 60px 0;
-  background-color: #faf2e8;
   text-align: center;
 }
 
@@ -1705,7 +1793,6 @@ $yellow-color: #fdebcc; /* 黄色 */
 /* お問い合わせセクション全体 */
 .p-contact {
   padding: 60px 0;
-  background-color: #faf2e8;
 }
 
 .p-contact__inner {
@@ -1724,7 +1811,6 @@ $yellow-color: #fdebcc; /* 黄色 */
   font-weight: bold;
   color: #333;
 }
-
 
 /* 説明テキスト */
 
@@ -1745,11 +1831,18 @@ $yellow-color: #fdebcc; /* 黄色 */
 
 .p-contact__form-wrap {
   display: flex;
-  margin-bottom: 20px;
   position: relative;
 }
+.p-contact__form-wrap.course {
+  .p-contact__form-label {
+    max-width: 300px;
+  }
+  .p-contact__label-optional::before {
+    right: 33px;
+  }
+}
 
-.p-contact__form > .p-contact__form-wrap:not(:last-child)::before {
+.p-contact__form > .p-contact__form-wrap:not(.is-last)::before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -1763,40 +1856,58 @@ $yellow-color: #fdebcc; /* 黄色 */
   font-weight: bold;
   color: #666;
   text-align: left;
-  display: inline-block;
-  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
   width: 100%;
-  max-width: 330px;
+  max-width: 220px;
   position: relative;
+}
+
+.p-contact__form-wrap--textarea > .p-contact__form-label {
+  align-items: flex-start;
+
+  .p-contact__label-optional::before {
+    right: inherit;
+    top: 30px;
+  }
 }
 
 .p-contact__label-optional,
 .p-contact__label-required {
+  display: contents;
   font-size: 12px;
   color: #666;
   margin-left: 10px;
   font-weight: normal;
 }
 
+.p-contact__label-required::before,
+.p-contact__label-optional::before {
+  padding: 0 10px;
+  border-radius: 10px;
+  right: 10px;
+}
+
 .p-contact__label-required::before {
   content: "必須";
-  color: #d73b6b;
+  position: absolute;
+  color: $white-color;
   font-weight: bold;
-  margin-right: 5px;
+  background-color: #333;
 }
 
 .p-contact__label-optional::before {
   content: "任意";
   position: absolute;
-  right: 100px;
   color: #666;
-  margin-right: 5px;
+  background-color: $white-color;
 }
 
 /* 各入力フィールド */
 .p-contact__form-input,
 .p-contact__form-textarea {
   width: 100%;
+  margin-left: 0;
 }
 
 .p-contact__form-input input[type="text"],
@@ -1838,11 +1949,12 @@ $yellow-color: #fdebcc; /* 黄色 */
 
 .p-contact__submit-button {
   display: inline-block;
-  padding: 12px 30px;
+  width: 140px;
+  height: 140px;
   font-size: 16px;
   color: #fff;
   background-color: #333;
-  border-radius: 25px;
+  border-radius: 50%;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -1850,20 +1962,4 @@ $yellow-color: #fdebcc; /* 黄色 */
 
 .p-contact__submit-button:hover {
   background-color: #555;
-}
-
-/* ボタン背景装飾 */
-.p-contact__form-submit-bg {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  border-radius: 25px;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
 }
