@@ -192,8 +192,8 @@
 
             <!-- ひばりジュニア弦楽アンサンブル -->
             <div class="p-work__class-item green">
-              <h4 class="p-work__class-description">一定レベルをクリアした、小学生〜大学生</h4>
-              <h3 class="p-work__class-title">ひばりジュニア弦楽アンサンブル</h3>
+              <h4 class="p-work__class-description">一定レベルをクリアした、<br class="is-sp">小学生〜大学生</h4>
+              <h3 class="p-work__class-title">ひばりジュニア<br class="is-sp">弦楽アンサンブル</h3>
             </div>
           </div>
 
@@ -517,15 +517,6 @@
           </form>
         </div>
       </div>
-
     </section>
   </div>
-
-
-
-
-
-
-
-
 </div>

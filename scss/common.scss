@@ -1854,6 +1854,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
 }
 
 .p-work__class-item {
+  padding: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: $pink-color;
@@ -2132,7 +2133,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
     background-color: $yellow-color;
   }
 
-  @include option.sp {
+  @include option.tab {
     width: auto;
   }
 }
@@ -2246,6 +2247,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
   max-width: 880px;
   margin: 0 auto;
   margin-bottom: 40px;
+  @include option.tab {
+    margin-bottom: 0;
+  }
 }
 
 .p-access__title {
