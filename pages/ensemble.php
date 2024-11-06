@@ -1,34 +1,3 @@
-<script>
-  (function(d) {
-    var config = {
-        kitId: 'dpn5pbx',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h = d.documentElement,
-      t = setTimeout(function() {
-        h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-      }, config.scriptTimeout),
-      tk = d.createElement("script"),
-      f = false,
-      s = d.getElementsByTagName("script")[0],
-      a;
-    h.className += " wf-loading";
-    tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-    tk.async = true;
-    tk.onload = tk.onreadystatechange = function() {
-      a = this.readyState;
-      if (f || a && a != "complete" && a != "loaded") return;
-      f = true;
-      clearTimeout(t);
-      try {
-        Typekit.load(config)
-      } catch (e) {}
-    };
-    s.parentNode.insertBefore(tk, s)
-  })(document);
-</script>
-
 <div class="en-wrap fade load-anim">
   <div class="inner">
 
@@ -112,7 +81,7 @@
     </section>
 
     <!-- about -->
-    <section class="p-about l-about" id="">
+    <section class="p-about l-about" id="about">
       <div class="p-about__inner inner">
         <div class="p-about__title-wrap">
           <h2 class="p-about__title">
@@ -197,7 +166,7 @@
             </div>
           </div>
 
-          <div class="p-work__class-wrap item01">
+          <div class="p-work__class-wrap item01" id="work1">
             <!-- ひばりっ子音楽隊の詳細情報 -->
             <div class="p-work__details">
               <h4 class="p-work__details-title">ひばりっ子音楽隊</h4>
@@ -240,7 +209,7 @@
             </div>
           </div>
 
-          <div class="p-work__class-wrap">
+          <div class="p-work__class-wrap" id="work2">
             <!-- ひばりジュニア弦楽アンサンブルの詳細情報 -->
             <div class="p-work__details">
               <h4 class="p-work__details-title green">ひばりジュニア<br class="is-sp">弦楽アンサンブル</h4>
@@ -319,7 +288,7 @@
     <div class="bg-color__item4"></div>
 
     <!-- teacher -->
-    <section class="p-teacher l-teacher" id="">
+    <section class="p-teacher l-teacher" id="teacher">
       <div class="p-teacher__inner">
         <div class="p-teacher__title-wrap">
           <h2 class="p-teacher__title main-title">
@@ -390,7 +359,7 @@
     <div class="bg-color__item5"></div>
 
     <!-- access -->
-    <section class="p-access l-access" id="">
+    <section class="p-access l-access" id="access">
       <div class="p-access__inner inner">
         <div class="p-access__title-wrap">
           <h2 class="p-access__title main-title">
@@ -432,7 +401,7 @@
     </section>
 
     <!-- contact -->
-    <section class="p-contact l-contact  " id="">
+    <section class="p-contact l-contact" id="contact">
       <div class="p-contact__inner">
         <div class="p-contact__title-wrap">
           <h2 class="p-contact__title main-title">

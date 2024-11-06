@@ -775,6 +775,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
   background-color: $body-color-bg;
   overflow: hidden;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   p,
   h2,
   h3,
@@ -1914,11 +1915,17 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
 .p-work__wrap > .p-work__class-wrap:nth-child(2) {
   margin-bottom: 180px;
+  @include option.tab {
+    margin-bottom: 80px;
+  }
 }
 
 /* 詳細情報セクション */
 .p-work__details {
   margin-bottom: 80px;
+  @include option.tab {
+    margin-bottom: 40px;
+  }
 }
 
 /* タイトルのスタイル */
@@ -2520,4 +2527,40 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
 .p-contact__submit-button:hover {
   background-color: #555;
+}
+
+/*===================================
+ * header
+===================================*/
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.en-header-menu {
+  font-size: clamp(12px, 5vw, 14px);
+}
+
+.en-contact-menu {
+  background-color: $green-color;
+  color: $white-color !important;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 10px;
+  text-align: center;
+  width: 120px;
+}
+
+.en-header-logo {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  a {
+    font-weight: bold;
+  }
+}
+
+.header-wrap .header-logo{
+  @include option.pc {
+    width: 100%;
+  }
 }
