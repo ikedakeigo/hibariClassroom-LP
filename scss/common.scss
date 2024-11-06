@@ -2559,8 +2559,102 @@ $body-color-bg: #fff8eb; /* 背景色 */
   }
 }
 
-.header-wrap .header-logo{
+.header-wrap .header-logo {
   @include option.pc {
     width: 100%;
+  }
+}
+
+/*===================================
+ * footer
+===================================*/
+
+#en-footer {
+  * div,
+  p,
+  a {
+    font-family: "fot-tsukuardgothic-std", sans-serif !important;
+    color: #333 !important;
+    font-weight: bold;
+  }
+
+  .mr-50 {
+    margin-right: 50px;
+  }
+
+  .footer-logo {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .contact {
+    padding: 15px 10px;
+    @include option.pc {
+      width: 15%;
+      text-align: center;
+    }
+    @include option.tab {
+      width: 100%;
+      text-align: left;
+      margin-left: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0;
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .en-footer-logo {
+    img {
+      height: 65px;
+      width: 160px;
+    }
+  }
+  .en-email {
+    display: flex;
+
+    @include option.pc {
+      flex-direction: column;
+      margin-left: 30px;
+    }
+    @include option.tab {
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .en-footer-tel {
+    position: relative;
+    @include option.pc {
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+    &::before {
+      content: "";
+      background-image: url(../image/icon/landline.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: -25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .text {
+    padding: 0 20px;
+  }
+  .snspc {
+    right: 0;
+    bottom: 75px;
+  }
+
+  .copywrite{
+    background-color: #8d8d8d;
   }
 }
