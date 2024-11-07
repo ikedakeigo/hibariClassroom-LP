@@ -793,11 +793,6 @@ nav .inner ul li a {
     padding: 110px 0 80px 0;
   }
 }
-@media (max-width: 600px) {
-  .en-wrap {
-    padding: 170px 0 80px 0;
-  }
-}
 .en-wrap .inner {
   max-width: 1250px;
   margin: 0 auto;
@@ -992,7 +987,7 @@ nav .inner ul li a {
 }
 @media (max-width: 600px) {
   .bg-color__item1::before {
-    top: 54%;
+    top: 48%;
   }
 }
 .bg-color__item2::before {
@@ -1013,7 +1008,7 @@ nav .inner ul li a {
 }
 @media (max-width: 600px) {
   .bg-color__item3::before {
-    top: 305%;
+    top: 279%;
   }
 }
 .bg-color__item4::before {
@@ -1025,12 +1020,12 @@ nav .inner ul li a {
 
 @media (max-width: 900px) {
   .bg-color__item4::before {
-    top: 460%;
+    top: 445%;
   }
 }
 @media (max-width: 600px) {
   .bg-color__item4::before {
-    top: 459%;
+    top: 416%;
   }
 }
 .bg-color__item5::before {
@@ -1042,7 +1037,12 @@ nav .inner ul li a {
 
 @media (max-width: 900px) {
   .bg-color__item5::before {
-    top: 538%;
+    top: 519%;
+  }
+}
+@media (max-width: 600px) {
+  .bg-color__item5::before {
+    top: 495%;
   }
 }
 .bg-color__item6::before {
@@ -1072,7 +1072,7 @@ nav .inner ul li a {
 @media (max-width: 600px) {
   .wave-container {
     height: 150px;
-    top: 39%;
+    top: 33%;
   }
 }
 .wave-container__item2 {
@@ -1093,7 +1093,7 @@ nav .inner ul li a {
 @media (max-width: 600px) {
   .wave-container__item2 {
     height: 150px;
-    top: 290%;
+    top: 264%;
   }
 }
 .wave-container__item3 {
@@ -1108,13 +1108,13 @@ nav .inner ul li a {
 @media (max-width: 900px) {
   .wave-container__item3 {
     height: 200px;
-    top: 440%;
+    top: 425%;
   }
 }
 @media (max-width: 600px) {
   .wave-container__item3 {
     height: 150px;
-    top: 444%;
+    top: 401%;
   }
 }
 .wave {
@@ -2226,30 +2226,56 @@ nav .inner ul li a {
   -ms-flex-align: center;
   align-items: center;
   gap: 10px;
-  overflow: hidden;
+  white-space: nowrap;
   margin-top: 20px;
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
+  -webkit-animation: scroll 30s linear infinite;
+  animation: scroll 30s linear infinite;
+  position: relative;
 }
 
 /* 個別画像スタイル */
 .p-work__image {
-  width: 100%;
-  height: auto;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  display: inline-block;
+  width: 470px;
+  height: 240px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   -o-object-fit: cover;
   object-fit: cover;
-  /* 画像の上下に少しの余白をつける */
-  margin: 2px;
 }
 
-/* コンテナ全体の背景色 */
-.p-work__images {
-  padding: 10px 0;
+@media (max-width: 900px) {
+  .p-work__image {
+    width: 300px;
+    height: 150px;
+  }
 }
-
+@media (max-width: 600px) {
+  .p-work__image {
+    width: 200px;
+    height: 100px;
+  }
+}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
 /*===================================
  * teacher
 ===================================*/
@@ -2763,6 +2789,18 @@ nav .inner ul li a {
 /*===================================
  * header
 ===================================*/
+.header-wrap .header-menu {
+  width: 80%;
+}
+
+@media (max-width: 1400px) {
+  .en-header .header-wrap .header-menu {
+    display: none !important;
+  }
+  .en-header .toggle_btn {
+    display: block;
+  }
+}
 .mr-30 {
   margin-right: 30px;
 }
@@ -2788,6 +2826,10 @@ nav .inner ul li a {
 
 .en-header-logo a {
   font-weight: bold;
+}
+
+.header-wrap .header-logo {
+  width: 20%;
 }
 
 @media (max-width: 1400px) {
@@ -2838,6 +2880,11 @@ nav .inner ul li a {
     font-size: 20px;
   }
 }
+@media (max-width: 600px) {
+  #en-footer .contact {
+    margin-left: 20px;
+  }
+}
 #en-footer .en-footer-logo img {
   height: 65px;
   width: 160px;
@@ -2861,6 +2908,14 @@ nav .inner ul li a {
 @media (max-width: 900px) {
   #en-footer .en-email a {
     font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  #en-footer .en-email {
+    margin-left: 20px;
+  }
+  #en-footer .en-email a {
+    font-size: clamp(12px, 5vw, 16px);
   }
 }
 #en-footer .en-footer-tel {

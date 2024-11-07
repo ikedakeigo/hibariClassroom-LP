@@ -49,7 +49,7 @@ jQuery(function ($) {
   $('#header a[href*="#"], #header a[href*="#"]').click(function () {
     const elmHash = $(this).attr("href");
     const pos = $(elmHash).offset().top;
-    $("body,html").animate({ scrollTop: pos - 50 }, 500);
+    $("body,html").animate({ scrollTop: pos - 100 }, 500);
     return false;
   });
 });

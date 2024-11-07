@@ -789,12 +789,12 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
   padding: 210px 0 80px 0;
 
-  @include option.sp {
-    padding: 110px 0 80px 0;
-  }
+  // @include option.tab {
+  //   padding: 170px 0 80px 0;
+  // }
 
   @include option.sp {
-    padding: 170px 0 80px 0;
+    padding: 110px 0 80px 0;
   }
 
   .inner {
@@ -974,7 +974,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
     top: 67%;
   }
   @include option.sp {
-    top: 54%;
+    top: 48%;
   }
 }
 
@@ -994,7 +994,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
     top: 320%;
   }
   @include option.sp {
-    top: 305%;
+    top: 279%;
   }
 }
 
@@ -1010,10 +1010,10 @@ $body-color-bg: #fff8eb; /* 背景色 */
   top: 448%;
   height: 88vh;
   @include option.tab {
-    top: 460%;
+    top: 445%;
   }
   @include option.sp {
-    top: 459%;
+    top: 416%;
   }
 }
 
@@ -1029,7 +1029,10 @@ $body-color-bg: #fff8eb; /* 背景色 */
   top: 525%;
   height: 20vh;
   @include option.tab {
-    top: 538%;
+    top: 519%;
+  }
+  @include option.sp {
+    top: 495%;
   }
 }
 
@@ -1057,7 +1060,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
   @include option.sp {
     height: 150px;
-    top: 39%;
+    top: 33%;
   }
 }
 
@@ -1076,7 +1079,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
   @include option.sp {
     height: 150px;
-    top: 290%;
+    top: 264%;
   }
 }
 
@@ -1090,12 +1093,12 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
   @include option.tab {
     height: 200px;
-    top: 440%;
+    top: 425%;
   }
 
   @include option.sp {
     height: 150px;
-    top: 444%;
+    top: 401%;
   }
 }
 
@@ -2046,25 +2049,36 @@ $body-color-bg: #fff8eb; /* 背景色 */
   justify-content: center;
   align-items: center;
   gap: 10px;
-  overflow: hidden;
+  white-space: nowrap;
   margin-top: 20px;
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
+  animation: scroll 30s linear infinite;
+  position: relative;
 }
 
 /* 個別画像スタイル */
 .p-work__image {
-  width: 100%;
-  height: auto;
-  flex: 1;
+  display: inline-block;
+  width: 470px;
+  height: 240px;
+  flex-shrink: 0;
   object-fit: cover;
-  /* 画像の上下に少しの余白をつける */
-  margin: 2px;
+  @include option.tab {
+    width: 300px;
+    height: 150px;
+  }
+  @include option.sp {
+    width: 200px;
+    height: 100px;
+  }
 }
 
-/* コンテナ全体の背景色 */
-.p-work__images {
-  padding: 10px 0;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /*===================================
@@ -2532,6 +2546,19 @@ $body-color-bg: #fff8eb; /* 背景色 */
 /*===================================
  * header
 ===================================*/
+.header-wrap .header-menu{
+  width: 80%;
+}
+@include option.pc {
+ .en-header .header-wrap .header-menu {
+    display: none !important;
+  }
+
+  .en-header .toggle_btn {
+    display: block;
+}
+}
+
 
 .mr-30 {
   margin-right: 30px;
@@ -2560,6 +2587,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
 }
 
 .header-wrap .header-logo {
+  width: 20%;
   @include option.pc {
     width: 100%;
   }
@@ -2604,6 +2632,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
         font-size: 20px;
       }
     }
+    @include option.sp {
+      margin-left: 20px;
+    }
   }
 
   .en-footer-logo {
@@ -2622,6 +2653,12 @@ $body-color-bg: #fff8eb; /* 背景色 */
     @include option.tab {
       a {
         font-size: 20px;
+      }
+    }
+    @include option.sp {
+      margin-left: 20px;
+      a {
+        font-size: clamp(12px, 5vw, 16px);
       }
     }
   }

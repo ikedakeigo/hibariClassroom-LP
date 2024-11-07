@@ -206,6 +206,12 @@
               <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image02.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
               <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image03.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
               <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image04.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+
+              <!-- 折り返し -->
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image01.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image02.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image03.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image04.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
             </div>
           </div>
 
@@ -244,6 +250,12 @@
             </div>
             <!-- 画像セクション -->
             <div class="p-work__images">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image05.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image06.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image07.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image08.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
+              
+              <!-- 折り返し -->
               <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image05.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
               <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image06.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
               <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image07.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
