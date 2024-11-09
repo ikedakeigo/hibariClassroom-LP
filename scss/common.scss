@@ -775,6 +775,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
   background-color: $body-color-bg;
   overflow: hidden;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   p,
   h2,
   h3,
@@ -788,12 +789,12 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
   padding: 210px 0 80px 0;
 
-  @include option.sp {
-    padding: 110px 0 80px 0;
-  }
+  // @include option.tab {
+  //   padding: 170px 0 80px 0;
+  // }
 
   @include option.sp {
-    padding: 170px 0 80px 0;
+    padding: 110px 0 80px 0;
   }
 
   .inner {
@@ -973,7 +974,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
     top: 67%;
   }
   @include option.sp {
-    top: 54%;
+    top: 48%;
   }
 }
 
@@ -993,7 +994,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
     top: 320%;
   }
   @include option.sp {
-    top: 305%;
+    top: 279%;
   }
 }
 
@@ -1009,10 +1010,10 @@ $body-color-bg: #fff8eb; /* 背景色 */
   top: 448%;
   height: 88vh;
   @include option.tab {
-    top: 460%;
+    top: 445%;
   }
   @include option.sp {
-    top: 459%;
+    top: 416%;
   }
 }
 
@@ -1028,7 +1029,10 @@ $body-color-bg: #fff8eb; /* 背景色 */
   top: 525%;
   height: 20vh;
   @include option.tab {
-    top: 538%;
+    top: 519%;
+  }
+  @include option.sp {
+    top: 495%;
   }
 }
 
@@ -1056,7 +1060,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
   @include option.sp {
     height: 150px;
-    top: 39%;
+    top: 33%;
   }
 }
 
@@ -1075,7 +1079,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
   @include option.sp {
     height: 150px;
-    top: 290%;
+    top: 264%;
   }
 }
 
@@ -1089,12 +1093,12 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
   @include option.tab {
     height: 200px;
-    top: 440%;
+    top: 425%;
   }
 
   @include option.sp {
     height: 150px;
-    top: 444%;
+    top: 401%;
   }
 }
 
@@ -1854,6 +1858,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
 }
 
 .p-work__class-item {
+  padding: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: $pink-color;
@@ -1913,11 +1918,17 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
 .p-work__wrap > .p-work__class-wrap:nth-child(2) {
   margin-bottom: 180px;
+  @include option.tab {
+    margin-bottom: 80px;
+  }
 }
 
 /* 詳細情報セクション */
 .p-work__details {
   margin-bottom: 80px;
+  @include option.tab {
+    margin-bottom: 40px;
+  }
 }
 
 /* タイトルのスタイル */
@@ -2038,25 +2049,36 @@ $body-color-bg: #fff8eb; /* 背景色 */
   justify-content: center;
   align-items: center;
   gap: 10px;
-  overflow: hidden;
+  white-space: nowrap;
   margin-top: 20px;
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
+  animation: scroll 30s linear infinite;
+  position: relative;
 }
 
 /* 個別画像スタイル */
 .p-work__image {
-  width: 100%;
-  height: auto;
-  flex: 1;
+  display: inline-block;
+  width: 470px;
+  height: 240px;
+  flex-shrink: 0;
   object-fit: cover;
-  /* 画像の上下に少しの余白をつける */
-  margin: 2px;
+  @include option.tab {
+    width: 300px;
+    height: 150px;
+  }
+  @include option.sp {
+    width: 200px;
+    height: 100px;
+  }
 }
 
-/* コンテナ全体の背景色 */
-.p-work__images {
-  padding: 10px 0;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /*===================================
@@ -2132,7 +2154,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
     background-color: $yellow-color;
   }
 
-  @include option.sp {
+  @include option.tab {
     width: auto;
   }
 }
@@ -2246,6 +2268,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
   max-width: 880px;
   margin: 0 auto;
   margin-bottom: 40px;
+  @include option.tab {
+    margin-bottom: 0;
+  }
 }
 
 .p-access__title {
@@ -2516,4 +2541,157 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
 .p-contact__submit-button:hover {
   background-color: #555;
+}
+
+/*===================================
+ * header
+===================================*/
+.header-wrap .header-menu{
+  width: 80%;
+}
+@include option.pc {
+ .en-header .header-wrap .header-menu {
+    display: none !important;
+  }
+
+  .en-header .toggle_btn {
+    display: block;
+}
+}
+
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.en-header-menu {
+  font-size: clamp(12px, 5vw, 14px);
+}
+
+.en-contact-menu {
+  background-color: $green-color;
+  color: $white-color !important;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 10px;
+  text-align: center;
+  width: 120px;
+}
+
+.en-header-logo {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  a {
+    font-weight: bold;
+  }
+}
+
+.header-wrap .header-logo {
+  width: 20%;
+  @include option.pc {
+    width: 100%;
+  }
+}
+
+/*===================================
+ * footer
+===================================*/
+
+#en-footer {
+  * div,
+  p,
+  a {
+    font-family: "fot-tsukuardgothic-std", sans-serif !important;
+    color: #333 !important;
+    font-weight: bold;
+  }
+
+  .mr-50 {
+    margin-right: 50px;
+  }
+
+  .footer-logo {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .contact {
+    padding: 15px 10px;
+    @include option.pc {
+      width: 15%;
+      text-align: center;
+    }
+    @include option.tab {
+      width: 100%;
+      text-align: left;
+      margin-left: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0;
+      a {
+        font-size: 20px;
+      }
+    }
+    @include option.sp {
+      margin-left: 20px;
+    }
+  }
+
+  .en-footer-logo {
+    img {
+      height: 65px;
+      width: 160px;
+    }
+  }
+  .en-email {
+    display: flex;
+
+    @include option.pc {
+      flex-direction: column;
+      margin-left: 30px;
+    }
+    @include option.tab {
+      a {
+        font-size: 20px;
+      }
+    }
+    @include option.sp {
+      margin-left: 20px;
+      a {
+        font-size: clamp(12px, 5vw, 16px);
+      }
+    }
+  }
+
+  .en-footer-tel {
+    position: relative;
+    @include option.pc {
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+    &::before {
+      content: "";
+      background-image: url(../image/icon/landline.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: -25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .text {
+    padding: 0 20px;
+  }
+  .snspc {
+    right: 0;
+    bottom: 75px;
+  }
+
+  .copywrite{
+    background-color: #8d8d8d;
+  }
 }
