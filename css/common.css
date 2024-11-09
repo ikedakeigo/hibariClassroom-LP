@@ -2554,6 +2554,52 @@ nav .inner ul li a {
 /*===================================
  * contact
 ===================================*/
+#en-confirm .p-contact__form-wrap {
+  padding: 20px 0;
+}
+
+#en-confirm .p-contact__form-label {
+  max-width: 300px;
+}
+
+#en-confirm .confirm {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#en-confirm .last-course {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  padding-bottom: 20px;
+}
+
+#en-confirm .p-contact__submit-button__prev {
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  margin-right: 20px;
+}
+
+@media (max-width: 900px) {
+  #en-confirm .p-contact__submit-button__prev {
+    width: clamp(5px, 30vw, 100px);
+    font-size: clamp(5px, 30vw, 16px);
+    height: clamp(5px, 30vw, 100px);
+  }
+}
+#en-confirm .p-contact__submit-button {
+  background-color: #63b68f;
+}
+
 /* お問い合わせセクション全体 */
 .p-contact {
   padding: 60px 0;
@@ -2631,7 +2677,7 @@ nav .inner ul li a {
     bottom: -40px;
   }
 }
-.p-contact__form > .p-contact__form-wrap:not(.is-last)::before {
+.p-contact__form > .p-contact__form-wrap:not(:is(.is-last, .confirm))::before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -2744,7 +2790,14 @@ nav .inner ul li a {
 }
 
 /* ラジオボタン */
-.p-contact__form-input label {
+.p-contact__form-input .label .first,
+.p-contact__form-input .label .last {
+  font-size: 14px;
+  color: #333;
+  display: block;
+}
+
+.wpcf7-list-item {
   font-size: 14px;
   color: #333;
   display: block;
@@ -2778,8 +2831,9 @@ nav .inner ul li a {
 
 @media (max-width: 900px) {
   .p-contact__submit-button {
-    width: 100px;
-    height: 100px;
+    width: clamp(5px, 30vw, 100px);
+    font-size: clamp(5px, 30vw, 16px);
+    height: clamp(5px, 30vw, 100px);
   }
 }
 .p-contact__submit-button:hover {

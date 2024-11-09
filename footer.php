@@ -1,7 +1,7 @@
 </div>
 
 <?php
-if (!is_page('ensemble')) : ?>
+	if (!is_page('ensemble') && !is_page('en-contact-confirm')) : ?>
 	<footer class="footer">
 		<div class="footer-menu flex relative mx-width">
 			<div class="images content relative logo">

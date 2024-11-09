@@ -45,7 +45,7 @@
 	?>
 
 	<?php
-	if (!is_page('ensemble')) : ?>
+	if (!is_page('ensemble') && !is_page('en-contact-confirm')) : ?>
 		<header id="header" class="header-group relative fixed" role="banner">
 			<!-- pc header -->
 			<div class="header-wrap flex">

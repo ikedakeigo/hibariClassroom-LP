@@ -254,7 +254,7 @@
               <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image06.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
               <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image07.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
               <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image08.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
-              
+
               <!-- 折り返し -->
               <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image05.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
               <img src="<?php echo get_template_directory_uri(); ?>/image/work/work_image06.png" alt="ひばりっ子音楽隊の画像1" class="p-work__image">
@@ -442,60 +442,7 @@
           </p>
         </div>
         <div class="p-contact__wrap">
-
-          <!-- お問い合わせフォーム -->
-          <form class="p-contact__form" action="">
-            <dl class="p-contact__form-wrap course">
-              <dt class="p-contact__form-label">お問い合わせのコース<span class="p-contact__label-optional"></span></dt>
-              <dd class="p-contact__form-input">
-                <label><input type="radio" name="course" value="ひばりっ子音楽隊"> ひばりっ子音楽隊</label>
-                <label><input type="radio" name="course" value="ひばり弦楽アンサンブル"> ひばり弦楽アンサンブル</label>
-              </dd>
-            </dl>
-            <dl class="p-contact__form-wrap course">
-              <dt class="p-contact__form-label"><span class="p-contact__label-optional"></span></dt>
-              <dd class="p-contact__form-input">
-                <label><input type="radio" name="inquiry-type" value="見学希望"> 見学希望</label>
-                <label><input type="radio" name="inquiry-type" value="入会希望"> 入会希望</label>
-              </dd>
-            </dl>
-            <dl class="p-contact__form-wrap">
-              <dt class="p-contact__form-label">お名前<span class="p-contact__label-required"></span></dt>
-              <dd class="p-contact__form-input">
-                <input type="text" name="name" placeholder="山田 太郎" required>
-              </dd>
-            </dl>
-            <dl class="p-contact__form-wrap">
-              <dt class="p-contact__form-label">フリガナ<span class="p-contact__label-required"></span></dt>
-              <dd class="p-contact__form-input">
-                <input type="text" name="furigana" placeholder="ヤマダ タロウ" required>
-              </dd>
-            </dl>
-            <dl class="p-contact__form-wrap">
-              <dt class="p-contact__form-label">メールアドレス<span class="p-contact__label-required"></span></dt>
-              <dd class="p-contact__form-input">
-                <input type="email" name="email" placeholder="sample@sample.com" required>
-              </dd>
-            </dl>
-
-            <dl class="p-contact__form-wrap">
-              <dt class="p-contact__form-label">電話番号<span class="p-contact__label-optional"></span></dt>
-              <dd class="p-contact__form-input">
-                <input type="tel" name="phone" placeholder="090-1234-5678">
-              </dd>
-            </dl>
-
-            <dl class="p-contact__form-wrap p-contact__form-wrap--textarea is-last">
-              <dt class="p-contact__form-label">お問い合わせ内容<span class="p-contact__label-optional"></span></dt>
-              <dd class="p-contact__form-textarea">
-                <textarea name="message" placeholder="ここにお問い合わせ内容をご記入ください。"></textarea>
-              </dd>
-            </dl>
-
-            <div class="p-contact__form-submit">
-              <button type="submit" class="p-contact__submit-button">確認画面へ</button>
-            </div>
-          </form>
+          <?php echo do_shortcode('[contact-form-7 id="744263f" html_class="p-contact__form" title="お問い合わせ（LP）"]'); ?>
         </div>
       </div>
     </section>

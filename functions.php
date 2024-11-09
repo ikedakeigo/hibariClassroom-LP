@@ -90,7 +90,7 @@ function popup($atts, $content)
 enabled => ポップアップ 0=無効 1=有効
 init_display => 0=デフォルトで出さない 1=デフォルトで出す
 modal_option => jQuery.modalに渡すオプション配列をJS連想配列の記述で。
-デフォルト {escapeClose: true, clickClose: true, showClose: true,} 
+デフォルト {escapeClose: true, clickClose: true, showClose: true,}
 escapeClose→Escキーを押したときに閉じるか
 clickClose→暗い背景をクリックしたときに閉じるか
 showClose→閉じる×アイコンを表示するか
@@ -206,7 +206,7 @@ height: 2.4rem;
 opacity: 0.5;
 top: -2rem;
 right: -2rem;
-z-index: -1;				
+z-index: -1;
 }
 </style>
 
@@ -263,7 +263,7 @@ jQuery("#{$modal_id}").modal(modal_option);
 
 }, 100);
 
-});	
+});
 
 </script>
 
@@ -357,3 +357,16 @@ function replace_req_params_base($atts, $content)
 }
 
 add_shortcode('replace_req_params', 'replace_req_params'); /* ショートコードを登録 */
+
+
+// 11/09 ここから
+// Contact Form 7で自動挿入されるPタグ、brタグを特定のページでのみ削除
+add_filter('wpcf7_autop_or_not', 'conditionally_remove_wpcf7_autop');
+function conditionally_remove_wpcf7_autop() {
+
+  if (is_page('ensemble') || is_page('en-contact-confirm')) {
+    return false;
+  }
+
+  return true;
+}
