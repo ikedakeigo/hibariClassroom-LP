@@ -771,6 +771,10 @@ $body-color-bg: #fff8eb; /* 背景色 */
 ===================================*/
 
 .en-wrap {
+  // .wpcf7-response-output {
+  //   display: none;
+  // }
+
   // background-color: $white-color;
   background-color: $body-color-bg;
   overflow: hidden;
@@ -2338,6 +2342,52 @@ $body-color-bg: #fff8eb; /* 背景色 */
  * contact
 ===================================*/
 
+#en-confirm {
+  .p-contact__form-wrap {
+    padding: 20px 0;
+  }
+  .p-contact__form-label {
+    max-width: 300px;
+  }
+
+  .confirm {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .last-course {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+    padding-bottom: 20px;
+  }
+
+  .p-contact__submit-button__prev {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 20px;
+
+    @include option.tab {
+      width: clamp(5px, 30vw, 100px);
+      font-size: clamp(5px, 30vw, 16px);
+      height: clamp(5px, 30vw, 100px);
+    }
+  }
+
+  .p-contact__submit-button {
+    background-color: $green-color;
+  }
+
+}
+
 /* お問い合わせセクション全体 */
 .p-contact {
   padding: 60px 0;
@@ -2404,7 +2454,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
   }
 }
 
-.p-contact__form > .p-contact__form-wrap:not(.is-last)::before {
+.p-contact__form > .p-contact__form-wrap:not(:is(.is-last, .confirm))::before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -2504,7 +2554,14 @@ $body-color-bg: #fff8eb; /* 背景色 */
 }
 
 /* ラジオボタン */
-.p-contact__form-input label {
+.p-contact__form-input .label .first,
+.p-contact__form-input .label .last {
+  font-size: 14px;
+  color: #333;
+  display: block;
+}
+
+.wpcf7-list-item {
   font-size: 14px;
   color: #333;
   display: block;
@@ -2534,8 +2591,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
   cursor: pointer;
   transition: background-color 0.3s;
   @include option.tab {
-    width: 100px;
-    height: 100px;
+    width: clamp(5px, 30vw, 100px);
+    font-size: clamp(5px, 30vw, 16px);
+    height: clamp(5px, 30vw, 100px);
   }
 }
 
@@ -2546,19 +2604,18 @@ $body-color-bg: #fff8eb; /* 背景色 */
 /*===================================
  * header
 ===================================*/
-.header-wrap .header-menu{
+.header-wrap .header-menu {
   width: 80%;
 }
 @include option.pc {
- .en-header .header-wrap .header-menu {
+  .en-header .header-wrap .header-menu {
     display: none !important;
   }
 
   .en-header .toggle_btn {
     display: block;
+  }
 }
-}
-
 
 .mr-30 {
   margin-right: 30px;
@@ -2691,7 +2748,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
     bottom: 75px;
   }
 
-  .copywrite{
+  .copywrite {
     background-color: #8d8d8d;
   }
 }
