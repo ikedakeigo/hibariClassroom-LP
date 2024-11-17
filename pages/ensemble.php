@@ -70,10 +70,10 @@
     <div class="bg-color__item1"></div>
 
     <!-- scroll-image -->
-    <section class="p-scroll-image l-scroll-image" id="">
+    <section class="p-scroll-image l-scroll-image fade-in-section" id="scroll-image">
       <div class="p-scroll-image__inner inner">
         <div class="p-scroll-image__wrap">
-          <figure class="p-scroll-image__item">
+          <figure class="p-scroll-image__item js-scroll-image">
             <img src="<?php echo get_template_directory_uri(); ?>/image/hero/hero-bottom.png" alt="合奏を楽しむメンバーの様子">
           </figure>
         </div>
@@ -81,7 +81,7 @@
     </section>
 
     <!-- about -->
-    <section class="p-about l-about" id="about">
+    <section class="p-about l-about fade-in-section" id="about">
       <div class="p-about__inner inner">
         <div class="p-about__title-wrap">
           <h2 class="p-about__title">
@@ -132,7 +132,7 @@
     <div class="bg-color__item2"></div>
 
     <!-- work -->
-    <section class="p-work l-work" id="">
+    <section class="p-work l-work fade-in-section" id="">
       <div class="p-work__inner">
         <div class="p-work__title-wrap">
           <h4 class="p-work__sub-title sub-title">
@@ -270,7 +270,7 @@
     <!-- 波ピンク -->
     <div class="wave-container__item2">
       <svg
-        class="wave"
+        class="wave__pink"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         preserveAspectRatio="none">
@@ -286,7 +286,7 @@
     <!-- 波みどり -->
     <div class="wave-container__item3">
       <svg
-        class="wave"
+        class="wave__green"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         preserveAspectRatio="none">
@@ -300,7 +300,7 @@
     <div class="bg-color__item4"></div>
 
     <!-- teacher -->
-    <section class="p-teacher l-teacher" id="teacher">
+    <section class="p-teacher l-teacher fade-in-section" id="teacher">
       <div class="p-teacher__inner">
         <div class="p-teacher__title-wrap">
           <h2 class="p-teacher__title main-title">
@@ -371,7 +371,7 @@
     <div class="bg-color__item5"></div>
 
     <!-- access -->
-    <section class="p-access l-access" id="access">
+    <section class="p-access l-access fade-in-section" id="access">
       <div class="p-access__inner inner">
         <div class="p-access__title-wrap">
           <h2 class="p-access__title main-title">
@@ -413,10 +413,10 @@
     </section>
 
     <!-- contact -->
-    <section class="p-contact l-contact" id="contact">
+    <section class="p-contact l-contact " id="contact">
       <div class="p-contact__inner">
         <div class="p-contact__title-wrap">
-          <h2 class="p-contact__title main-title">
+          <h2 class="p-contact__title main-title fade-in-section">
             <span>お申し込み <br class="is-sp">お問い合わせ</span>
           </h2>
 
@@ -433,7 +433,7 @@
             </div>
           </div>
         </div>
-        <div class="p-contact__detail">
+        <div class="p-contact__detail fade-in-section">
           <p>
             レッスンに関するご質問・お問い合わせは、こちらのメールフォームより承ります。<br>
             必要事項をご入力の上、「確認画面へ」ボタンをクリックしてください。<br>

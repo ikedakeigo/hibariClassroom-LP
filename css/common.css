@@ -1117,7 +1117,9 @@ nav .inner ul li a {
     top: 401%;
   }
 }
-.wave {
+.wave,
+.wave__green,
+.wave__pink {
   width: 100%;
   height: 100%;
 }
@@ -1588,6 +1590,11 @@ nav .inner ul li a {
   margin-bottom: 230px;
 }
 
+@media (max-width: 900px) {
+  .l-scroll-image {
+    margin-bottom: 100px;
+  }
+}
 /*===================================
  * about
 ===================================*/
@@ -1905,16 +1912,17 @@ nav .inner ul li a {
 @media (max-width: 900px) {
   .p-about__image-item01,
   .p-about__image-item02 {
-    bottom: -10%;
+    bottom: -20%;
   }
 }
 .p-about__image-item01 {
   width: 112px;
-  left: 10%;
+  left: 0;
 }
 
 @media (max-width: 900px) {
   .p-about__image-item01 {
+    left: 10%;
     width: 92px;
   }
 }
@@ -1927,11 +1935,12 @@ nav .inner ul li a {
 
 .p-about__image-item02 {
   width: 113px;
-  right: 10%;
+  right: 0;
 }
 
 @media (max-width: 900px) {
   .p-about__image-item02 {
+    right: 10%;
     width: 93px;
   }
 }
@@ -3007,4 +3016,124 @@ nav .inner ul li a {
 
 #en-footer .copywrite {
   background-color: #8d8d8d;
+}
+
+/*===================================
+ * アニメーション css
+===================================*/
+.wave-container {
+  overflow: hidden;
+}
+
+.wave,
+.wave__pink,
+.wave__green {
+  /* 初期位置は画面外 */
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  /* 完全に非表示 */
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
+  transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  transition: transform 1s ease-out, opacity 1s ease-out, -webkit-transform 1s ease-out;
+}
+
+.p-hero__image {
+  /* 初期は非表示 */
+  opacity: 0;
+  /* 下に少し移動 */
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  -webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+/* 拡大する画像 */
+.js-scroll-image {
+  -webkit-transform: scale(0.3);
+  transform: scale(0.3);
+  /* 初期スケール */
+  opacity: 0.5;
+  /* 初期透明度 */
+  -webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.shape {
+  /* 初期は非表示 */
+  opacity: 0;
+  /* 少し小さくする */
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.is-visible {
+  /* 表示位置に移動 */
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  /* 完全に表示 */
+  opacity: 1;
+}
+
+.shape.is-visible {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.p-hero__title span {
+  /* 初期は非表示 */
+  opacity: 0;
+  /* 下に少し移動 */
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  /* アニメーション対象 */
+  display: inline-block;
+  -webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.p-hero__title span.is-visible {
+  /* 表示 */
+  opacity: 1;
+  /* 元の位置に移動 */
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* 初期状態 */
+.fade-in-section .fade-in-child {
+  /* 完全に非表示 */
+  opacity: 0;
+  /* 下に少し移動 */
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  -webkit-transition: opacity 0.6s ease-out, -webkit-transform 0.6s ease-out;
+  transition: opacity 0.6s ease-out, -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out, -webkit-transform 0.6s ease-out;
+}
+
+/* 表示状態 */
+.fade-in-section .fade-in-child.is-visible {
+  /* 表示 */
+  opacity: 1;
+  /* 元の位置に移動 */
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.shape-group {
+  -webkit-transform: none !important;
+  transform: none !important;
 }
