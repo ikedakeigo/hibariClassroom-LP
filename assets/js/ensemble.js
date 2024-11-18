@@ -53,9 +53,11 @@
   fadeInSections.forEach((section) => {
     observer.observe(section);
 
-    // 子要素にクラスを一括追加
+    // 子要素にクラスを一括追加（ただし対象外の要素を除外）
     section.querySelectorAll("*").forEach((child) => {
-      child.classList.add("fade-in-child");
+      if (!child.classList.contains("no-animation")) {
+        child.classList.add("fade-in-child");
+      }
     });
   });
 
@@ -135,5 +137,4 @@
 
   // ページ読み込み時に設定を初期化
   document.addEventListener("DOMContentLoaded", setupScrollAnimations);
-
 })();

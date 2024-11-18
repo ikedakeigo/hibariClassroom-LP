@@ -52,22 +52,24 @@
         </div>
 
       </div>
+
+      <!-- ベージュ波 -->
+      <div class="wave-container no-animation">
+        <svg
+          class="wave no-animation"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none">
+          <path
+            class="no-animation"
+            fill="#fef8e7"
+            fill-opacity="1"
+            d="M0,0 C300,0 900,320 1440,240 L1440,320 L0,320 Z"></path>
+        </svg>
+      </div>
+      <!-- ベージュ背景 -->
+      <div class="bg-color__item1 no-animation"></div>
     </section>
-
-    <div class="wave-container">
-      <svg
-        class="wave"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        preserveAspectRatio="none">
-        <path
-          fill="#fef8e7"
-          fill-opacity="1"
-          d="M0,0 C300,0 900,320 1440,240 L1440,320 L0,320 Z"></path>
-      </svg>
-    </div>
-
-    <div class="bg-color__item1"></div>
 
     <!-- scroll-image -->
     <section class="p-scroll-image l-scroll-image fade-in-section" id="scroll-image">
@@ -265,39 +267,46 @@
         </div>
 
       </div>
+
+
+      <!-- 波ピンク -->
+      <div class="wave-container__item2 no-animation">
+        <svg
+          class="wave__pink no-animation"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none">
+          <path
+            class="no-animation"
+            fill="#fae7db"
+            fill-opacity="1"
+            d="M0,0 C300,0 900,320 1440,240 L1440,320 L0,320 Z"></path>
+        </svg>
+      </div>
+      <!-- ピンク背景 -->
+      <div class="bg-color__item3 no-animation"></div>
+
+      <!-- 波みどり -->
+      <div class="wave-container__item3 no-animation">
+        <svg
+          class="wave__green no-animation"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          preserveAspectRatio="none">
+          <path
+            class="no-animation"
+            fill="#A8D5A2"
+            fill-opacity="1"
+            d="M0,240 C540,320 1140,0 1440,0 L1440,320 L0,320 Z"></path>
+        </svg>
+      </div>
+
+      <!-- みどり背景 -->
+      <div class="bg-color__item4 no-animation"></div>
+
+      <!-- ぼかし背景 -->
+      <div class="bg-color__item5 no-animation"></div>
     </section>
-
-    <!-- 波ピンク -->
-    <div class="wave-container__item2">
-      <svg
-        class="wave__pink"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        preserveAspectRatio="none">
-        <path
-          fill="#fae7db"
-          fill-opacity="1"
-          d="M0,0 C300,0 900,320 1440,240 L1440,320 L0,320 Z"></path>
-      </svg>
-    </div>
-
-    <div class="bg-color__item3"></div>
-
-    <!-- 波みどり -->
-    <div class="wave-container__item3">
-      <svg
-        class="wave__green"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        preserveAspectRatio="none">
-        <path
-          fill="#A8D5A2"
-          fill-opacity="1"
-          d="M0,240 C540,320 1140,0 1440,0 L1440,320 L0,320 Z"></path>
-      </svg>
-    </div>
-
-    <div class="bg-color__item4"></div>
 
     <!-- teacher -->
     <section class="p-teacher l-teacher fade-in-section" id="teacher">
@@ -324,28 +333,28 @@
             <h4 class="p-teacher__role">teacher</h4>
             <h3 class="p-teacher__name">大熊勇希 部長</h3>
             <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image01.png" alt="大熊勇希 部長" class="p-teacher__image">
-            <a href="#" class="p-teacher__button">詳しくは →</a>
+            <a href="/teachers#teacher1" target="_blank" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <div class="p-teacher__card">
             <h4 class="p-teacher__role">teacher</h4>
             <h3 class="p-teacher__name">山内睦大 副部長</h3>
             <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image02.png" alt="山内睦大 副部長" class="p-teacher__image">
-            <a href="#" class="p-teacher__button">詳しくは →</a>
+            <a href="/teachers#teacher2" target="_blank" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <div class="p-teacher__card">
             <h4 class="p-teacher__role">teacher</h4>
             <h3 class="p-teacher__name">井木恵</h3>
             <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image03.png" alt="井木恵" class="p-teacher__image">
-            <a href="#" class="p-teacher__button">詳しくは →</a>
+            <a href="/teachers#teacher3" target="_blank" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <div class="p-teacher__card">
             <h4 class="p-teacher__role">teacher</h4>
             <h3 class="p-teacher__name">ジョンソン愛梨</h3>
             <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image04.png" alt="ジョンソン愛梨" class="p-teacher__image">
-            <a href="#" class="p-teacher__button">詳しくは →</a>
+            <a href="/teachers#teacher4" target="_blank" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <!-- Advisor Cards -->
@@ -353,14 +362,14 @@
             <h4 class="p-teacher__role">advisor</h4>
             <h3 class="p-teacher__name">井上佳那子</h3>
             <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image05.png" alt="井上佳那子" class="p-teacher__image">
-            <a href="#" class="p-teacher__button">詳しくは →</a>
+            <a href="/teachers#teacher5" class="p-teacher__button">詳しくは →</a>
           </div>
 
           <div class="p-teacher__card advisor">
             <h4 class="p-teacher__role">advisor</h4>
             <h3 class="p-teacher__name">北村明日人</h3>
             <img src="<?php echo get_template_directory_uri(); ?>/image/teacher/teacher_image06.png" alt="北村明日人" class="p-teacher__image">
-            <a href="#" class="p-teacher__button">詳しくは →</a>
+            <a href="/teachers#teacher6" target="_blank" class="p-teacher__button">詳しくは →</a>
           </div>
 
         </div>
@@ -368,7 +377,7 @@
       </div>
     </section>
 
-    <div class="bg-color__item5"></div>
+
 
     <!-- access -->
     <section class="p-access l-access fade-in-section" id="access">
@@ -396,10 +405,10 @@
 
           <!-- 地図表示 -->
           <div class="p-access__map">
-            <div class="p-access__map-inner">
-              <p>地図</p>
+            <div class="p-access__map-inner no-animation">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d535220.7936904861!2d135.19643042713128!3d34.69990420463432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f7e38f9d9493%3A0x29e70700fea56cd9!2z44Gy44Gw44KK6Z-z5qW95pWZ5a6k44CM6Zuy6ZuA5LiY5pys5qCh44CN!5e1!3m2!1sja!2sjp!4v1731939839118!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <a href="https://www.google.com/maps" target="_blank" class="p-access__map-link">Google Maps で見る</a>
+            <a href="https://maps.app.goo.gl/EiLFMZUHiq6YxYfD6" target="_blank" class="p-access__map-link">Google Maps で見る</a>
           </div>
 
           <!-- 住所情報 -->

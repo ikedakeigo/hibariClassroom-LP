@@ -777,6 +777,10 @@ nav .inner ul li a {
   padding: 210px 0 80px 0;
 }
 
+.en-wrap .wpcf7-spinner {
+  display: none;
+}
+
 .en-wrap p,
 .en-wrap h2,
 .en-wrap h3,
@@ -970,24 +974,29 @@ nav .inner ul li a {
 .bg-color__item6::before {
   content: "";
   position: absolute;
-  left: 0;
   width: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   height: 100vh;
   background-color: #fff8eb;
+  z-index: 0;
 }
 
 .bg-color__item1::before {
-  top: 82%;
+  top: 79%;
+  width: 100vw;
+  z-index: -1;
 }
 
 @media (max-width: 900px) {
   .bg-color__item1::before {
-    top: 67%;
+    top: 75%;
   }
 }
 @media (max-width: 600px) {
   .bg-color__item1::before {
-    top: 48%;
+    top: 70%;
   }
 }
 .bg-color__item2::before {
@@ -995,54 +1004,59 @@ nav .inner ul li a {
 }
 
 .bg-color__item3::before {
+  z-index: -1;
+  width: 100vw;
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(250, 231, 219)), to(rgb(255, 245, 240)));
   background: linear-gradient(to bottom, rgb(250, 231, 219), rgb(255, 245, 240));
-  top: 312%;
+  top: 23%;
   height: 150vh;
 }
 
 @media (max-width: 900px) {
   .bg-color__item3::before {
-    top: 320%;
+    top: 26%;
   }
 }
 @media (max-width: 600px) {
   .bg-color__item3::before {
-    top: 279%;
+    top: 24%;
+    -webkit-transform: translate(-50%, -1%);
+    transform: translate(-50%, -1%);
   }
 }
 .bg-color__item4::before {
+  z-index: -1;
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(168, 213, 162)), color-stop(rgb(168, 220, 173)), color-stop(rgb(168, 227, 183)), color-stop(rgb(235, 240, 230)), to(#ffffff));
   background: linear-gradient(to bottom, rgb(168, 213, 162), rgb(168, 220, 173), rgb(168, 227, 183), rgb(235, 240, 230), #ffffff);
-  top: 448%;
+  top: 65%;
+  width: 100vw;
   height: 88vh;
 }
 
 @media (max-width: 900px) {
   .bg-color__item4::before {
-    top: 445%;
+    top: 64%;
   }
 }
 @media (max-width: 600px) {
   .bg-color__item4::before {
-    top: 416%;
+    top: 62%;
+    -webkit-transform: translate(-50%, -2%);
+    transform: translate(-50%, -2%);
   }
 }
 .bg-color__item5::before {
+  z-index: -1;
   background: -webkit-gradient(linear, left bottom, left top, from(#fff8eb), color-stop(rgb(255, 248, 235)), color-stop(rgb(255, 252, 245)), to(rgb(245, 248, 243)));
   background: linear-gradient(to top, #fff8eb, rgb(255, 248, 235), rgb(255, 252, 245), rgb(245, 248, 243));
-  top: 525%;
+  top: 90%;
+  width: 100vw;
   height: 20vh;
 }
 
-@media (max-width: 900px) {
-  .bg-color__item5::before {
-    top: 519%;
-  }
-}
 @media (max-width: 600px) {
   .bg-color__item5::before {
-    top: 495%;
+    top: 81%;
   }
 }
 .bg-color__item6::before {
@@ -1056,65 +1070,77 @@ nav .inner ul li a {
 ===================================*/
 .wave-container {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 300px;
   overflow: hidden;
-  left: 0;
-  top: 52%;
+  top: 42%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 @media (max-width: 900px) {
   .wave-container {
     height: 200px;
-    top: 47%;
   }
 }
 @media (max-width: 600px) {
   .wave-container {
-    height: 150px;
-    top: 33%;
+    height: 100px;
+    top: 50%;
   }
 }
 .wave-container__item2 {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 300px;
   overflow: hidden;
-  left: 0;
-  top: 282%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 14%;
+  z-index: -1;
 }
 
 @media (max-width: 900px) {
   .wave-container__item2 {
-    height: 200px;
-    top: 300%;
+    height: 150px;
+    top: 22%;
   }
 }
 @media (max-width: 600px) {
   .wave-container__item2 {
-    height: 150px;
-    top: 264%;
+    height: 100px;
+    top: 22%;
+    -webkit-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
   }
 }
 .wave-container__item3 {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 300px;
   overflow: hidden;
-  left: 0;
-  top: 418%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 56%;
+  z-index: -1;
 }
 
 @media (max-width: 900px) {
   .wave-container__item3 {
-    height: 200px;
-    top: 425%;
+    height: 150px;
+    top: 60%;
   }
 }
 @media (max-width: 600px) {
   .wave-container__item3 {
-    height: 150px;
-    top: 401%;
+    height: 100px;
+    top: 60%;
+    -webkit-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
   }
 }
 .wave,
@@ -1174,6 +1200,10 @@ nav .inner ul li a {
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 @media (max-width: 900px) {
@@ -2438,12 +2468,19 @@ nav .inner ul li a {
   color: #333;
   font-size: 15px;
   text-decoration: none;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .p-teacher__button:hover {
-  background-color: #63b68f;
+  background-color: rgb(73, 157, 118);
+  color: #ffffff;
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 @media (max-width: 900px) {
@@ -2510,20 +2547,19 @@ nav .inner ul li a {
 /* 地図表示部分 */
 .p-access__map {
   position: relative;
-  background-color: #e0e0e0;
   border-radius: 12px;
   width: 100%;
-  height: 510px;
+  height: 0;
+  padding-top: 47.5%;
   margin: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+}
+
+.p-access__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .p-access__map-inner {
@@ -2540,6 +2576,7 @@ nav .inner ul li a {
   font-size: 14px;
   color: #666;
   text-decoration: none;
+  z-index: 10;
 }
 
 .p-access__map-link:hover {
@@ -3136,4 +3173,9 @@ nav .inner ul li a {
 .shape-group {
   -webkit-transform: none !important;
   transform: none !important;
+}
+
+#teacher5:target,
+#teacher6:target {
+  scroll-margin-top: 300px;
 }

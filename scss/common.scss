@@ -771,9 +771,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
 ===================================*/
 
 .en-wrap {
-  // .wpcf7-response-output {
-  //   display: none;
-  // }
+  .wpcf7-spinner {
+    display: none;
+  }
 
   // background-color: $white-color;
   background-color: $body-color-bg;
@@ -965,20 +965,25 @@ $body-color-bg: #fff8eb; /* 背景色 */
   &::before {
     content: "";
     position: absolute;
-    left: 0;
     width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     height: 100vh;
     background-color: $body-color-bg;
+    z-index: 0;
   }
 }
 
+// ベージュ波
 .bg-color__item1::before {
-  top: 82%;
+  top: 79%;
+  width: 100vw;
+  z-index: -1;
   @include option.tab {
-    top: 67%;
+    top: 75%;
   }
   @include option.sp {
-    top: 48%;
+    top: 70%;
   }
 }
 
@@ -986,23 +991,29 @@ $body-color-bg: #fff8eb; /* 背景色 */
   top: 148%;
 }
 
+//  波ピンク
 .bg-color__item3::before {
+  z-index: -1;
+  width: 100vw;
   background: linear-gradient(
     to bottom,
     rgb(250, 231, 219),
     rgb(255, 245, 240)
   );
-  top: 312%;
+  top: 23%;
   height: 150vh;
   @include option.tab {
-    top: 320%;
+    top: 26%;
   }
   @include option.sp {
-    top: 279%;
+    top: 24%;
+    transform: translate(-50%, -1%);
   }
 }
 
+// 波みどり
 .bg-color__item4::before {
+  z-index: -1;
   background: linear-gradient(
     to bottom,
     rgb(168, 213, 162),
@@ -1011,17 +1022,21 @@ $body-color-bg: #fff8eb; /* 背景色 */
     rgb(235, 240, 230),
     #ffffff
   );
-  top: 448%;
+  top: 65%;
+  width: 100vw;
   height: 88vh;
   @include option.tab {
-    top: 445%;
+    top: 64%;
   }
   @include option.sp {
-    top: 416%;
+    top: 62%;
+    transform: translate(-50%, -2%);
   }
 }
 
+// ぼかし
 .bg-color__item5::before {
+  z-index: -1;
   background: linear-gradient(
     to top,
     #fff8eb,
@@ -1030,13 +1045,14 @@ $body-color-bg: #fff8eb; /* 背景色 */
     rgb(245, 248, 243)
   );
 
-  top: 525%;
+  top: 90%;
+  width: 100vw;
   height: 20vh;
   @include option.tab {
-    top: 519%;
+    // top: 605%;
   }
   @include option.sp {
-    top: 495%;
+    top: 81%;
   }
 }
 
@@ -1049,60 +1065,70 @@ $body-color-bg: #fff8eb; /* 背景色 */
 /*===================================
  * 波 背景
 ===================================*/
+// ベージュ波
 .wave-container {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 300px;
   overflow: hidden;
-  left: 0;
-  top: 52%;
-
+  top: 42%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
   @include option.tab {
     height: 200px;
-    top: 47%;
+    // top: 57%;
   }
 
   @include option.sp {
-    height: 150px;
-    top: 33%;
+    height: 100px;
+    top: 50%;
   }
 }
 
+//  波ピンク
 .wave-container__item2 {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 300px;
   overflow: hidden;
-  left: 0;
-  top: 282%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 14%;
+  z-index: -1;
 
   @include option.tab {
-    height: 200px;
-    top: 300%;
+    height: 150px;
+    top: 22%;
   }
 
   @include option.sp {
-    height: 150px;
-    top: 264%;
+    height: 100px;
+    top: 22%;
+    transform: translate(-50%, -30%);
   }
 }
 
+// 波みどり
 .wave-container__item3 {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 300px;
   overflow: hidden;
-  left: 0;
-  top: 418%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 56%;
+  z-index: -1;
 
   @include option.tab {
-    height: 200px;
-    top: 425%;
+    height: 150px;
+    top: 60%;
   }
 
   @include option.sp {
-    height: 150px;
-    top: 401%;
+    height: 100px;
+    top: 60%;
+    transform: translate(-50%, -30%);
   }
 }
 
@@ -1149,6 +1175,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
   font-size: 47px;
   line-height: 2;
   writing-mode: vertical-rl;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   @include option.tab {
     font-size: 30px;
   }
@@ -1516,7 +1545,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
 .l-scroll-image {
   margin-bottom: 230px;
-  @include option.tab{
+  @include option.tab {
     margin-bottom: 100px;
   }
 }
@@ -2235,11 +2264,16 @@ $body-color-bg: #fff8eb; /* 背景色 */
   color: #333;
   font-size: 15px;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+  transform: translateY(0);
 }
 
 .p-teacher__button:hover {
-  background-color: $green-color;
+  background-color: darken($green-color, 10%);
+  color: $white-color;
+  transform: translateY(-10px);
 }
 
 @media (max-width: 900px) {
@@ -2303,14 +2337,22 @@ $body-color-bg: #fff8eb; /* 背景色 */
 /* 地図表示部分 */
 .p-access__map {
   position: relative;
-  background-color: #e0e0e0;
   border-radius: 12px;
   width: 100%;
-  height: 510px;
+  height: 0;
+  padding-top: 47.5%;
   margin: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.p-access__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .p-access__map-inner {
@@ -2327,6 +2369,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
   font-size: 14px;
   color: #666;
   text-decoration: none;
+  z-index: 10;
 }
 
 .p-access__map-link:hover {
@@ -2861,4 +2904,9 @@ $body-color-bg: #fff8eb; /* 背景色 */
 
 .shape-group {
   transform: none !important;
+}
+
+#teacher5:target,
+#teacher6:target {
+  scroll-margin-top: 300px;
 }
