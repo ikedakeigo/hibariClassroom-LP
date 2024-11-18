@@ -4,6 +4,10 @@ function add_stylesheet()
 {
 	wp_enqueue_style('main', get_template_directory_uri() . '/css/style.css', array());
 	wp_enqueue_script('main-js', get_stylesheet_directory_uri() . '/js/common.js', array(), '1.0', true);
+	if (is_page('ensemble')) {
+		// アンサンブルページのみ読み込む
+		wp_enqueue_script('ensemble-js', get_stylesheet_directory_uri() . '/assets/js/ensemble.js', array(), '1.0', true);
+	}
 }
 add_action('wp_enqueue_scripts', 'add_stylesheet');
 
@@ -362,11 +366,12 @@ add_shortcode('replace_req_params', 'replace_req_params'); /* ショートコー
 // 11/09 ここから
 // Contact Form 7で自動挿入されるPタグ、brタグを特定のページでのみ削除
 add_filter('wpcf7_autop_or_not', 'conditionally_remove_wpcf7_autop');
-function conditionally_remove_wpcf7_autop() {
+function conditionally_remove_wpcf7_autop()
+{
 
-  if (is_page('ensemble') || is_page('en-contact-confirm')) {
-    return false;
-  }
+	if (is_page('ensemble') || is_page('en-contact-confirm')) {
+		return false;
+	}
 
-  return true;
+	return true;
 }
