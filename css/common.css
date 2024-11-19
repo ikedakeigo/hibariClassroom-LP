@@ -2552,8 +2552,19 @@ nav .inner ul li a {
   height: 0;
   padding-top: 47.5%;
   margin: 20px 0;
+  overflow: hidden;
 }
 
+@media (max-width: 900px) {
+  .p-access__map {
+    padding-top: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .p-access__map {
+    padding-top: 120%;
+  }
+}
 .p-access__map iframe {
   position: absolute;
   top: 0;

@@ -1049,7 +1049,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
   width: 100vw;
   height: 20vh;
   @include option.tab {
-    // top: 605%;
+    top: 84%;
   }
   @include option.sp {
     top: 81%;
@@ -2342,9 +2342,13 @@ $body-color-bg: #fff8eb; /* 背景色 */
   height: 0;
   padding-top: 47.5%;
   margin: 20px 0;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  overflow: hidden;
+  @include option.tab{
+    padding-top: 100%;
+  }
+  @include option.sp{
+    padding-top: 120%;
+  }
 }
 
 .p-access__map iframe {
