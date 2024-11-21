@@ -18,10 +18,10 @@
             <figure class="p-hero__image p-hero__image--left">
               <img src="<?php echo get_template_directory_uri(); ?>/image/hero/hero_imag01.png" alt="合奏を楽しむメンバーの様子">
             </figure>
-            <figure class="p-hero__image p-hero__image--left">
+            <figure class="p-hero__image p-hero__image--left p-hero__wrapNone">
               <img src="<?php echo get_template_directory_uri(); ?>/image/hero/hero_imag02.png" alt="合奏を楽しむメンバーの様子">
             </figure>
-            <figure class="p-hero__image p-hero__image--left">
+            <figure class="p-hero__image p-hero__image--left p-hero__wrapNone">
               <img src="<?php echo get_template_directory_uri(); ?>/image/hero/hero_imag03.png" alt="合奏を楽しむメンバーの様子">
           </div>
           <!-- 右側の画像グループ -->
@@ -29,7 +29,7 @@
             <figure class="p-hero__image p-hero__image--right">
               <img src="<?php echo get_template_directory_uri(); ?>/image/hero/hero_imag04.png" alt="合奏を楽しむメンバーの様子">
             </figure>
-            <figure class="p-hero__image p-hero__image--right">
+            <figure class="p-hero__image p-hero__image--right p-hero__wrapNone">
               <img src="<?php echo get_template_directory_uri(); ?>/image/hero/hero_imag05.png" alt="合奏を楽しむメンバーの様子">
             </figure>
             <!-- </div> -->
@@ -406,7 +406,7 @@
           <!-- 地図表示 -->
           <div class="p-access__map">
             <div class="p-access__map-inner no-animation">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d535220.7936904861!2d135.19643042713128!3d34.69990420463432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f7e38f9d9493%3A0x29e70700fea56cd9!2z44Gy44Gw44KK6Z-z5qW95pWZ5a6k44CM6Zuy6ZuA5LiY5pys5qCh44CN!5e1!3m2!1sja!2sjp!4v1731939839118!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204.91141312664303!2d135.32525987479937!3d34.74091390000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f2e37dc3ffff%3A0x1fdf90351cdf2580!2z44Gy44Gw44KK6Z-z5qW95pWZ5a6k44O75aSZ5bed5qCh!5e0!3m2!1sja!2sjp!4v1682390887007!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <a href="https://maps.app.goo.gl/EiLFMZUHiq6YxYfD6" target="_blank" class="p-access__map-link">Google Maps で見る</a>
           </div>

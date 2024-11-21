@@ -1045,7 +1045,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
     rgb(245, 248, 243)
   );
 
-  top: 90%;
+  top: 86%;
   width: 100vw;
   height: 20vh;
   @include option.tab {
@@ -1186,7 +1186,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
   }
 }
 
-.p-hero__wrap {
+.p-hero__wrapNone {
   @include option.tab {
     display: none;
   }
@@ -1217,16 +1217,30 @@ $body-color-bg: #fff8eb; /* 背景色 */
 .p-hero__images-group--left {
   text-align: -webkit-left;
   left: 0;
-}
+  @include option.tab {
+    top: 30%;
+  }
+  @include option.sp {
+    left: 10%;
+  }
 
-.p-hero__images-group--left .p-hero__image {
-  margin-bottom: 20px;
+  .p-hero__images-group--left .p-hero__image {
+    margin-bottom: 20px;
+  }
 }
 
 /* 右側の画像グループ */
 .p-hero__images-group--right {
   right: 0;
   text-align: -webkit-right;
+  @include option.tab {
+    right: -5%;
+    top: 75%;
+  }
+  @include option.sp {
+    right: -10%;
+    top: 80%;
+  }
 }
 
 .p-hero__images-group--right .p-hero__image {
@@ -1244,7 +1258,7 @@ $body-color-bg: #fff8eb; /* 背景色 */
   transform: translateY(-30px);
   width: aspect(300, 150);
   @include option.tab {
-    width: aspect(150, 75);
+    width: aspect(100, 20);
   }
   img {
     aspect-ratio: 300/300;
@@ -1284,6 +1298,11 @@ $body-color-bg: #fff8eb; /* 背景色 */
   transform: translateY(-20px);
   width: 360px;
   height: aspect(360, 210);
+  border-radius: 10px;
+  @include option.tab {
+    width: 80px;
+    height: aspect(100, 20);
+  }
   img {
     aspect-ratio: 360/210;
     object-fit: cover;
@@ -1327,8 +1346,8 @@ $body-color-bg: #fff8eb; /* 背景色 */
     }
 
     @include option.sp {
-      top: 20%;
-      right: 20%;
+      top: 75%;
+      right: 28%;
       width: 24px;
       height: 24px;
     }
@@ -1447,7 +1466,8 @@ $body-color-bg: #fff8eb; /* 背景色 */
     }
 
     @include option.sp {
-      // top: 30%;
+      top: 31%;
+      left: 12%;
       width: 36px;
       height: 36px;
     }
@@ -2343,10 +2363,10 @@ $body-color-bg: #fff8eb; /* 背景色 */
   padding-top: 47.5%;
   margin: 20px 0;
   overflow: hidden;
-  @include option.tab{
+  @include option.tab {
     padding-top: 100%;
   }
-  @include option.sp{
+  @include option.sp {
     padding-top: 120%;
   }
 }
@@ -2818,12 +2838,12 @@ $body-color-bg: #fff8eb; /* 背景色 */
 .wave__pink,
 .wave__green {
   /* 初期位置は画面外 */
-  transform: translateY(100%);
+  // transform: translateY(100%);
   /* 完全に非表示 */
-  opacity: 0;
-  transition:
-    transform 1s ease-out,
-    opacity 1s ease-out;
+  // opacity: 0;
+  // transition:
+  //   transform 1s ease-out,
+  //   opacity 1s ease-out;
 }
 
 .p-hero__image {

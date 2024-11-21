@@ -1049,11 +1049,16 @@ nav .inner ul li a {
   z-index: -1;
   background: -webkit-gradient(linear, left bottom, left top, from(#fff8eb), color-stop(rgb(255, 248, 235)), color-stop(rgb(255, 252, 245)), to(rgb(245, 248, 243)));
   background: linear-gradient(to top, #fff8eb, rgb(255, 248, 235), rgb(255, 252, 245), rgb(245, 248, 243));
-  top: 90%;
+  top: 86%;
   width: 100vw;
   height: 20vh;
 }
 
+@media (max-width: 900px) {
+  .bg-color__item5::before {
+    top: 84%;
+  }
+}
 @media (max-width: 600px) {
   .bg-color__item5::before {
     top: 81%;
@@ -1217,7 +1222,7 @@ nav .inner ul li a {
   }
 }
 @media (max-width: 900px) {
-  .p-hero__wrap {
+  .p-hero__wrapNone {
     display: none;
   }
 }
@@ -1249,7 +1254,17 @@ nav .inner ul li a {
   left: 0;
 }
 
-.p-hero__images-group--left .p-hero__image {
+@media (max-width: 900px) {
+  .p-hero__images-group--left {
+    top: 30%;
+  }
+}
+@media (max-width: 600px) {
+  .p-hero__images-group--left {
+    left: 10%;
+  }
+}
+.p-hero__images-group--left .p-hero__images-group--left .p-hero__image {
   margin-bottom: 20px;
 }
 
@@ -1259,6 +1274,18 @@ nav .inner ul li a {
   text-align: -webkit-right;
 }
 
+@media (max-width: 900px) {
+  .p-hero__images-group--right {
+    right: -5%;
+    top: 75%;
+  }
+}
+@media (max-width: 600px) {
+  .p-hero__images-group--right {
+    right: -10%;
+    top: 80%;
+  }
+}
 .p-hero__images-group--right .p-hero__image {
   margin-bottom: 20px;
 }
@@ -1279,7 +1306,7 @@ nav .inner ul li a {
 
 @media (max-width: 900px) {
   .p-hero__image--left:nth-child(1) {
-    width: 50%;
+    width: 20%;
   }
 }
 .p-hero__image--left:nth-child(1) img {
@@ -1331,8 +1358,15 @@ nav .inner ul li a {
   transform: translateY(-20px);
   width: 360px;
   height: 58.3333333333%;
+  border-radius: 10px;
 }
 
+@media (max-width: 900px) {
+  .p-hero__image--right:nth-child(1) {
+    width: 80px;
+    height: 20%;
+  }
+}
 .p-hero__image--right:nth-child(1) img {
   aspect-ratio: 360/210;
   -o-object-fit: cover;
@@ -1385,8 +1419,8 @@ nav .inner ul li a {
 }
 @media (max-width: 600px) {
   .p-hero .shape[data-shape=circle][data-color=blue] {
-    top: 20%;
-    right: 20%;
+    top: 75%;
+    right: 28%;
     width: 24px;
     height: 24px;
   }
@@ -1515,6 +1549,8 @@ nav .inner ul li a {
 }
 @media (max-width: 600px) {
   .p-hero .shape[data-shape=square][data-color=yellow] {
+    top: 31%;
+    left: 12%;
     width: 36px;
     height: 36px;
   }
@@ -3077,14 +3113,7 @@ nav .inner ul li a {
 .wave__pink,
 .wave__green {
   /* 初期位置は画面外 */
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
   /* 完全に非表示 */
-  opacity: 0;
-  -webkit-transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
-  transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
-  transition: transform 1s ease-out, opacity 1s ease-out;
-  transition: transform 1s ease-out, opacity 1s ease-out, -webkit-transform 1s ease-out;
 }
 
 .p-hero__image {
