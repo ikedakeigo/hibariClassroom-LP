@@ -304,8 +304,6 @@
       <!-- みどり背景 -->
       <div class="bg-color__item4 no-animation"></div>
 
-      <!-- ぼかし背景 -->
-      <div class="bg-color__item5 no-animation"></div>
     </section>
 
     <!-- teacher -->

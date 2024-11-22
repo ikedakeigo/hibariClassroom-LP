@@ -1026,11 +1026,11 @@ nav .inner ul li a {
 }
 .bg-color__item4::before {
   z-index: -1;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgb(168, 213, 162)), color-stop(rgb(168, 220, 173)), color-stop(rgb(168, 227, 183)), color-stop(rgb(235, 240, 230)), to(#ffffff));
-  background: linear-gradient(to bottom, rgb(168, 213, 162), rgb(168, 220, 173), rgb(168, 227, 183), rgb(235, 240, 230), #ffffff);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(168, 213, 162)), color-stop(rgb(168, 220, 173)), color-stop(rgb(168, 227, 183)), color-stop(rgb(235, 240, 230)), to(#fff8eb));
+  background: linear-gradient(to bottom, rgb(168, 213, 162), rgb(168, 220, 173), rgb(168, 227, 183), rgb(235, 240, 230), #fff8eb);
   top: 65%;
   width: 100vw;
-  height: 88vh;
+  height: 100vh;
 }
 
 @media (max-width: 900px) {
@@ -1047,21 +1047,21 @@ nav .inner ul li a {
 }
 .bg-color__item5::before {
   z-index: -1;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fff8eb), color-stop(rgb(255, 248, 235)), color-stop(rgb(255, 252, 245)), to(rgb(245, 248, 243)));
-  background: linear-gradient(to top, #fff8eb, rgb(255, 248, 235), rgb(255, 252, 245), rgb(245, 248, 243));
-  top: 86%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 248, 235)), color-stop(rgb(255, 252, 245)), to(rgb(245, 248, 243)));
+  background: linear-gradient(to top, rgb(255, 248, 235), rgb(255, 252, 245), rgb(245, 248, 243) 100%);
+  top: 89%;
   width: 100vw;
-  height: 20vh;
+  height: 100vh;
 }
 
 @media (max-width: 900px) {
   .bg-color__item5::before {
-    top: 84%;
+    top: 86%;
   }
 }
 @media (max-width: 600px) {
   .bg-color__item5::before {
-    top: 81%;
+    top: 78%;
   }
 }
 .bg-color__item6::before {

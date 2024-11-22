@@ -1014,17 +1014,25 @@ $body-color-bg: #fff8eb; /* 背景色 */
 // 波みどり
 .bg-color__item4::before {
   z-index: -1;
+  // background: linear-gradient(
+  //   to bottom,
+  //   rgb(168, 213, 162),
+  //   rgb(168, 220, 173),
+  //   rgb(168, 227, 183),
+  //   rgb(235, 240, 230),
+  //   #ffffff
+  // );
   background: linear-gradient(
-    to bottom,
-    rgb(168, 213, 162),
-    rgb(168, 220, 173),
-    rgb(168, 227, 183),
-    rgb(235, 240, 230),
-    #ffffff
-  );
+  to bottom,
+  rgb(168, 213, 162),
+  rgb(168, 220, 173),
+  rgb(168, 227, 183),
+  rgb(235, 240, 230),
+  #fff8eb
+);
   top: 65%;
   width: 100vw;
-  height: 88vh;
+  height: 100vh;
   @include option.tab {
     top: 64%;
   }
@@ -1037,22 +1045,21 @@ $body-color-bg: #fff8eb; /* 背景色 */
 // ぼかし
 .bg-color__item5::before {
   z-index: -1;
-  background: linear-gradient(
-    to top,
-    #fff8eb,
-    rgb(255, 248, 235),
-    rgb(255, 252, 245),
-    rgb(245, 248, 243)
-  );
+background: linear-gradient(
+  to top,
+  rgba(255, 248, 235) ,
+  rgba(255, 252, 245) ,
+  rgba(245, 248, 243) 100%
+);
 
-  top: 86%;
+  top: 89%;
   width: 100vw;
-  height: 20vh;
+  height: 100vh;
   @include option.tab {
-    top: 84%;
+    top: 86%;
   }
   @include option.sp {
-    top: 81%;
+    top: 78%;
   }
 }
 
