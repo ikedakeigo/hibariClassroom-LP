@@ -5,7 +5,7 @@
   const wave = document.querySelector(".wave");
 
   // 他の波のアニメーション
-  const waves = document.querySelectorAll(".wave__pink, .wave__green");
+  // const waves = document.querySelectorAll(".wave__pink, .wave__green");
 
   // 監視対象の全てセクションを取得
   const fadeInSections = document.querySelectorAll(".fade-in-section");
@@ -45,9 +45,9 @@
     { rootMargin: "0px 0px -10% 0px" },
   );
 
-  waves.forEach((wave) => {
-    observer.observe(wave);
-  });
+  // waves.forEach((wave) => {
+  //   observer.observe(wave);
+  // });
 
   // 親要素を監視対象に追加
   fadeInSections.forEach((section) => {
